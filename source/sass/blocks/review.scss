@@ -1,3 +1,5 @@
+@use "../mixins";
+
 .review {
 
 }
@@ -11,11 +13,13 @@
 }
 
 .review__title {
-
+  @include mixins.text--bold(18px, #000000);
+  text-transform: uppercase;
 }
 
 .review__subtitle {
-
+  @include mixins.text--normal(#333333);
+  text-transform: uppercase;
 }
 
 .review__form {

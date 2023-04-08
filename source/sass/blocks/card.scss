@@ -1,3 +1,5 @@
+@use "../mixins";
+
 .card {
 
 }
@@ -11,11 +13,13 @@
 }
 
 .card__title {
-
+  @include mixins.text--bold(14px, #000000);
+  text-transform: uppercase;
 }
 
 .card__description {
-
+  @include mixins.text--normal(#333333);
+  text-transform: uppercase;
 }
 
 .card__like-wrapper {
@@ -27,5 +31,5 @@
 }
 
 .card__like-counter {
-
+  @include mixins.title(14px, #000000);
 }

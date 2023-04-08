@@ -16,16 +16,16 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Фото и видео</a>
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item main-nav__item--current">
-            <a>Форма отзыва</a>
+            <a class="main-nav__link">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -130,7 +130,7 @@
             </fieldset>
             <fieldset class="form__fieldset input">
               <legend class="input__title">Опишите свои эмоции:</legend>
-              <label class="visually_hidden" for="emotions">Описание эмоций.</label>
+              <label class="visually-hidden" for="emotions">Описание эмоций.</label>
               <textarea name="input__textarea" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <div class="form__button-wrapper">
@@ -152,20 +152,28 @@
 
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">Мы ВКонтакте.</a>
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы ВКонтакте.</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              <a class="social__link" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">Мы в Youtube.</a>
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Youtube.</span>
+              </a>
             </li>
           </ul>
         </section>
         <section class="main-footer__about about">
           <h2 class="visually-hidden">О создателях сайта.</h2>
           <b class="about__title">Разработано</b>
-          <a class="about__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="about__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy.</span>
+          </a>
         </section>
       </div>
     </footer>

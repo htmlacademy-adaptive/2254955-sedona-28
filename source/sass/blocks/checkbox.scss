@@ -1,3 +1,5 @@
+@use "../mixins";
+
 .checkbox {
 
 }
@@ -15,6 +17,6 @@
 }
 
 .checkbox__name {
-
+  @include mixins.text--bold(18px, #000000);
 }
 

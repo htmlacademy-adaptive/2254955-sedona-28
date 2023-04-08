@@ -5,5 +5,33 @@
 }
 
 @mixin button {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #81B3D2;
 
+  text-transform: uppercase;
+
+  padding: 8px 12px;
+}
+
+@mixin text--bold($size, $color) {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: $size;
+  line-height: 26px;
+  color: $color;
+}
+
+@mixin text--normal($color) {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color;
 }

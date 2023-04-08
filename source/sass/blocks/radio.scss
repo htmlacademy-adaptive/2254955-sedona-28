@@ -1,3 +1,5 @@
+@use "../mixins";
+
 .radio {
 
 }
@@ -15,6 +17,6 @@
 }
 
 .radio__name {
-
+  @include mixins.text--bold(18px, #000000);
 }
 

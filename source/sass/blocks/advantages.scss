@@ -13,11 +13,11 @@
 }
 
 .advantages__item {
-
+  background-color: #FFFFFF;
 }
 
 .advantages__item--photo {
-
+  background-color: #81B3D2;
 }
 
 .advantages__item--services {
@@ -25,15 +25,33 @@
 }
 
 .advantages__title {
+  @include mixins.text--bold(18px, #000000);
+  text-transform: uppercase;
+}
 
+.advantages__title--photo {
+  @include mixins.text--bold(18px, #FFFFFF);
+  text-transform: uppercase;
 }
 
 .advantages__number {
+  @include mixins.text--normal(#333333);
+  text-transform: uppercase;
+}
 
+.advantages__number--photo {
+  @include mixins.text--normal(#FFFFFF);
+  text-transform: uppercase;
 }
 
 .advantages__description {
+  @include mixins.text--normal(#333333);
+  text-transform: uppercase;
+}
 
+.advantages__description--photo {
+  @include mixins.text--normal(#FFFFFF);
+  text-transform: uppercase;
 }
 
 .advantages__photo-wrapper {

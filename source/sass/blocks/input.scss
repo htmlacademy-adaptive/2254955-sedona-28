@@ -5,7 +5,8 @@
 }
 
 .input__title {
-
+  @include mixins.text--bold(18px, #000000);
+  text-transform: uppercase;
 }
 
 .input__wrapper {
@@ -13,7 +14,8 @@
 }
 
 .input__label {
-
+  @include mixins.text--normal(#333333);
+  text-transform: uppercase;
 }
 
 .input__edit-wrapper {
