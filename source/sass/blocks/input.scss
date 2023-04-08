@@ -1,3 +1,5 @@
+@use "../mixins";
+
 .input {
 
 }
@@ -23,7 +25,7 @@
 }
 
 .input__list {
-
+  @include mixins.reset-list;
 }
 
 .input__textarea {

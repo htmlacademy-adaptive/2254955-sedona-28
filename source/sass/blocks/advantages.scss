@@ -1,3 +1,5 @@
+@use "../mixins";
+
 .advantages {
 
 }
@@ -7,7 +9,7 @@
 }
 
 .advantages__list {
-
+  @include mixins.reset-list;
 }
 
 .advantages__item {

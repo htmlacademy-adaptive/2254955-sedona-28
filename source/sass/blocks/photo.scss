@@ -1,9 +1,11 @@
+@use "../mixins";
+
 .photo {
 
 }
 
 .photo__list {
-
+  @include mixins.reset-list;
 }
 
 .photo__item {

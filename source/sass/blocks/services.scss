@@ -1,9 +1,11 @@
+@use "../mixins";
+
 .services {
 
 }
 
 .services__list {
-
+  @include mixins.reset-list;
 }
 
 .services__item {
