@@ -27,11 +27,11 @@
   color: $color;
 }
 
-@mixin text--normal($color) {
+@mixin text--normal($size, $color) {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: $size;
   line-height: 21px;
   color: $color;
 }

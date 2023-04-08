@@ -14,7 +14,7 @@
 }
 
 .input__label {
-  @include mixins.text--normal(#333333);
+  @include mixins.text--normal(14px, #333333);
   text-transform: uppercase;
 }
 
@@ -23,7 +23,15 @@
 }
 
 .input__edit {
+  @include mixins.text--bold(18px, #000000);
+  border: none;
+  background: #F2F2F2;
 
+  padding: 16px;
+}
+
+.input__edit::placeholder {
+  @include mixins.text--bold(18px, rgba(0, 0, 0, 0.3));
 }
 
 .input__list {
@@ -31,5 +39,5 @@
 }
 
 .input__textarea {
-
+  @include mixins.text--bold(18px, rgba(0, 0, 0, 0.3));
 }

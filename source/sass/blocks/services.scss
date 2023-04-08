@@ -30,6 +30,6 @@
 }
 
 .services__description {
-  @include mixins.text--normal(#333333);
+  @include mixins.text--normal(14px, #333333);
   text-transform: uppercase;
 }
