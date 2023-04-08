@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -10,26 +11,24 @@
         <a class="main-header__logo" href="#">
           <img class="main-header__image" src="#" alt="Логотип города «Седона»." width="185" height="96">
         </a>
-        <nav class="main-nav">
+        <nav class="main-header__nav main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--current">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item main-nav__item--current">
-                <a>Фото и видео</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="form.html">Форма отзыва</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
         </nav>
       </header>
 
@@ -45,8 +44,8 @@
           <h2 class="visually-hidden">Фотогалерея Седоны.</h2>
           <div class="gallery__wrapper">
             <div class="gallery__header">
-              <p class="gallery__title title">Фото и видео</p>
-              <p class="gallery__description description">Не можете решиться на путешествие из-за курса?Фотографии помогут вам забыть о политике и экономике</p>
+              <p class="gallery__title">Фото и видео</p>
+              <p class="gallery__description">Не можете решиться на путешествие из-за курса?Фотографии помогут вам забыть о политике и экономике</p>
             </div>
 
             <div class="gallery__photo photo">
@@ -54,8 +53,8 @@
                 <li class="photo__item card">
                   <img class="card__image" src="#" width="280" height="280" alt="Дорога, холмы, закат.">
                   <div class="card__details">
-                    <h3 class="card__title title">Народные просторы</h3>
-                    <span class="card__description description">Автор фото: Борис</span>
+                    <h3 class="card__title">Народные просторы</h3>
+                    <span class="card__description">Автор фото: Борис</span>
                     <div class="card__like-wrapper">
                       <img class="card__like-image" src="#" alt="Нравится." width="23" height="21">
                       <b class="card__like-counter">1350</b>
@@ -65,8 +64,8 @@
                 <li class="photo__item card">
                   <img class="card__image" src="#" width="280" height="280" alt="Растение с жёлтыми цветками на фоне каньона.">
                   <div class="card__details">
-                    <h3 class="card__title title">Местная растительность</h3>
-                    <span class="card__description description">Автор фото: Сергей</span>
+                    <h3 class="card__title">Местная растительность</h3>
+                    <span class="card__description">Автор фото: Сергей</span>
                     <div class="card__like-wrapper">
                       <img class="card__like-image" src="#" alt="Нравится." width="23" height="21">
                       <b class="card__like-counter">143</b>
@@ -76,8 +75,8 @@
                 <li class="photo__item card">
                   <img class="card__image" src="#" width="280" height="280" alt="Горная дорога на склоне, окружённая лесом.">
                   <div class="card__details">
-                    <h3 class="card__title title">Дорога на север</h3>
-                    <span class="card__description description">Автор фото: Петр</span>
+                    <h3 class="card__title">Дорога на север</h3>
+                    <span class="card__description">Автор фото: Петр</span>
                     <div class="card__like-wrapper">
                       <img class="card__like-image" src="#" alt="Нравится." width="23" height="21">
                       <b class="card__like-counter">96</b>
@@ -87,8 +86,8 @@
                 <li class="photo__item card">
                   <img class="card__image" src="#" width="280" height="280" alt="Каньон с холмами и обрывами.">
                   <div class="card__details">
-                    <h3 class="card__title title">Мост дьявола</h3>
-                    <span class="card__description description">Автор фото: Антон</span>
+                    <h3 class="card__title">Мост дьявола</h3>
+                    <span class="card__description">Автор фото: Антон</span>
                     <div class="card__like-wrapper">
                       <img class="card__like-image" src="#" alt="Нравится." width="23" height="21">
                       <b class="card__like-counter">254</b>
@@ -120,20 +119,28 @@
 
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link" href="https://vk.com/htmlacademy">Мы ВКонтакте.</a>
+                <a class="social__link" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Мы ВКонтакте.</span>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+                <a class="social__link" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Мы в Телеграме</span>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">Мы в Youtube.</a>
+                <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Мы в Youtube.</span>
+                </a>
               </li>
             </ul>
           </section>
           <section class="main-footer__about about">
             <h2 class="visually-hidden">О создателях сайта.</h2>
             <b class="about__title">Разработано</b>
-            <a class="about__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="about__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="visually-hidden">HTML Academy.</span>
+            </a>
           </section>
         </div>
       </footer>

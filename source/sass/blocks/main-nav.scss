@@ -1,0 +1,27 @@
+@use "../mixins";
+
+.main-nav {
+
+}
+
+.main-nav__toggle {
+
+}
+
+.main-nav__list {
+  @include mixins.reset-list;
+}
+
+.main-nav__item {
+  @include mixins.text--bold(14px, #000000);
+  text-transform: uppercase;
+}
+
+.main-nav__item--current {
+  color: #766357;
+}
+
+.main-nav__link {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,32 @@
+@use "../mixins";
+
+.modal {
+
+}
+
+.modal--failure {
+
+}
+
+.modal--success {
+
+}
+
+.modal__content-wrapper {
+
+}
+
+.modal__title {
+  @include mixins.text--bold(21px, #000000);
+  text-transform: uppercase;
+}
+
+.modal__message {
+  @include mixins.text--normal(14px, #333333);
+  text-transform: uppercase;
+}
+
+.modal__button {
+  @include mixins.button;
+  border: none;
+}

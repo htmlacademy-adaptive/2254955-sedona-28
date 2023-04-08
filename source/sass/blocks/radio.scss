@@ -1,0 +1,21 @@
+@use "../mixins";
+
+.radio {
+
+}
+
+.radio__item {
+
+}
+
+.radio__label {
+
+}
+
+.radio__input {
+
+}
+
+.radio__name {
+  @include mixins.text--bold(18px, #000000);
+}

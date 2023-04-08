@@ -1,0 +1,35 @@
+@use "../mixins";
+
+.services {
+
+}
+
+.services__list {
+  @include mixins.reset-list;
+}
+
+.services__item {
+
+}
+
+.services__item_home {
+
+}
+
+.services__item_food {
+
+}
+
+.services__item_presents {
+
+}
+
+.services__title {
+  @include mixins.text--bold(18px, #000000);
+  text-transform: uppercase;
+}
+
+.services__description {
+  @include mixins.text--normal(14px, #333333);
+  text-transform: uppercase;
+}

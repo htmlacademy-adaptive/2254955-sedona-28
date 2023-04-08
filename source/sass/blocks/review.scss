@@ -1,0 +1,27 @@
+@use "../mixins";
+
+.review {
+
+}
+
+.review__wrapper {
+
+}
+
+.review__header {
+
+}
+
+.review__title {
+  @include mixins.text--bold(18px, #000000);
+  text-transform: uppercase;
+}
+
+.review__subtitle {
+  @include mixins.text--normal(14px, #333333);
+  text-transform: uppercase;
+}
+
+.review__form {
+
+}

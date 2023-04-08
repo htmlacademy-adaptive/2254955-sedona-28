@@ -1,0 +1,23 @@
+@use "../mixins";
+
+.video {
+
+}
+
+.video__wrapper {
+
+}
+
+.video__title {
+  @include mixins.text--bold(18px, #000000);
+  text-transform: uppercase;
+}
+
+.video__description {
+  @include mixins.text--normal(14px, #333333);
+  text-transform: uppercase;
+}
+
+.video__image {
+
+}

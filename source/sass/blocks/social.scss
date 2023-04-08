@@ -1,0 +1,17 @@
+@use "../mixins";
+
+.social {
+
+}
+
+.social__list {
+  @include mixins.reset-list;
+}
+
+.social__item {
+
+}
+
+.social__link {
+
+}

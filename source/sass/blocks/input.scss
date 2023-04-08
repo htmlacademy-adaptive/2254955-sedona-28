@@ -1,0 +1,43 @@
+@use "../mixins";
+
+.input {
+
+}
+
+.input__title {
+  @include mixins.text--bold(18px, #000000);
+  text-transform: uppercase;
+}
+
+.input__wrapper {
+
+}
+
+.input__label {
+  @include mixins.text--normal(14px, #333333);
+  text-transform: uppercase;
+}
+
+.input__edit-wrapper {
+
+}
+
+.input__edit {
+  @include mixins.text--bold(18px, #000000);
+  border: none;
+  background: #f2f2f2;
+
+  padding: 16px;
+}
+
+.input__edit::placeholder {
+  @include mixins.text--bold(18px, rgba(0, 0, 0, 0.3));
+}
+
+.input__list {
+  @include mixins.reset-list;
+}
+
+.input__textarea {
+  @include mixins.text--bold(18px, rgba(0, 0, 0, 0.3));
+}

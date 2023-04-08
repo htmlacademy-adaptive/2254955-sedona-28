@@ -1,1 +1,34 @@
-// Начните писать стили здесь
+// переменные и миксины
+@use "./variables";
+@use "./mixins";
+
+// базовые свойства
+@use "./base/fonts";
+@use "./base/base";
+
+// утилиты
+@use "./utils";
+
+// блоки компонентов
+@use "./blocks/about";
+@use "./blocks/advantages";
+@use "./blocks/card";
+@use "./blocks/checkbox";
+@use "./blocks/form";
+@use "./blocks/gallery";
+@use "./blocks/hashtag";
+@use "./blocks/hero";
+@use "./blocks/input";
+@use "./blocks/main-footer";
+@use "./blocks/main-header";
+@use "./blocks/main-nav";
+@use "./blocks/map";
+@use "./blocks/modal";
+@use "./blocks/page";
+@use "./blocks/photo";
+@use "./blocks/radio";
+@use "./blocks/review";
+@use "./blocks/search";
+@use "./blocks/services";
+@use "./blocks/social";
+@use "./blocks/video";

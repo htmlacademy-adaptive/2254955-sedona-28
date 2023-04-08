@@ -1,0 +1,21 @@
+@use "../mixins";
+
+.checkbox {
+
+}
+
+.checkbox__item {
+
+}
+
+.checkbox__label {
+
+}
+
+.checkbox__input {
+
+}
+
+.checkbox__name {
+  @include mixins.text--bold(18px, #000000);
+}

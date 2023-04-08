@@ -1,0 +1,9 @@
+@use "../mixins";
+
+.hashtag {
+
+}
+
+.hashtag__text {
+  @include mixins.text--bold(21px, #000000);
+}

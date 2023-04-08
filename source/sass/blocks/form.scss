@@ -1,0 +1,23 @@
+@use "../mixins";
+
+.form {
+
+}
+
+.form__fieldset {
+  border-style: none;
+}
+
+.form__button-wrapper {
+
+}
+
+.form__button {
+  @include mixins.button;
+  border: none;
+}
+
+.form__hint {
+  @include mixins.text--normal(12px, rgba(51, 51, 51, 0.6));
+  text-transform: uppercase;
+}

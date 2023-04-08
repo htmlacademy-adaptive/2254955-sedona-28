@@ -1,0 +1,63 @@
+@use "../mixins";
+
+.advantages {
+
+}
+
+.advantages__header {
+
+}
+
+.advantages__list {
+  @include mixins.reset-list;
+}
+
+.advantages__item {
+  background-color: #ffffff;
+}
+
+.advantages__item--photo {
+  background-color: #81b3d2;
+}
+
+.advantages__item--services {
+
+}
+
+.advantages__title {
+  @include mixins.text--bold(18px, #000000);
+  text-transform: uppercase;
+}
+
+.advantages__title--photo {
+  @include mixins.text--bold(18px, #FFFFFF);
+  text-transform: uppercase;
+}
+
+.advantages__number {
+  @include mixins.text--normal(14px, #333333);
+  text-transform: uppercase;
+}
+
+.advantages__number--photo {
+  @include mixins.text--normal(14px, #FFFFFF);
+  text-transform: uppercase;
+}
+
+.advantages__description {
+  @include mixins.text--normal(14px, #333333);
+  text-transform: uppercase;
+}
+
+.advantages__description--photo {
+  @include mixins.text--normal(14px, #FFFFFF);
+  text-transform: uppercase;
+}
+
+.advantages__photo-wrapper {
+
+}
+
+.advantages__photo {
+
+}
