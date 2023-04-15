@@ -1,11 +1,45 @@
 @use "../mixins";
+@use "../variables";
 
 .advantages {
 
 }
 
 .advantages__header {
+  padding: 32px 18px 16px 18px ;
 
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 47px 124px 56px 124px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 59px 357px 44px 358px;
+  }
+}
+
+.advantages__title {
+  @include mixins.text--bold(18px, variables.$text-color-primary);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.text--bold(21px, variables.$text-color-primary);
+    margin: 0 0 22px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    @include mixins.text--bold(21px, variables.$text-color-primary);
+    margin: 0 0 40px;
+  }
+}
+
+.advantages__description {
+  @include mixins.text--normal(14px, variables.$text-color-secondary);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 }
 
 .advantages__list {
@@ -24,33 +58,37 @@
 
 }
 
-.advantages__title {
-  @include mixins.text--bold(18px, #000000);
+.advantages__card {
+
+}
+
+.advantages__name {
+  @include mixins.text--bold(18px, variables.$text-color-primary);
   text-transform: uppercase;
 }
 
-.advantages__title--photo {
-  @include mixins.text--bold(18px, #FFFFFF);
+.advantages__name--photo {
+  @include mixins.text--bold(18px, variables.$text-color-alternate);
   text-transform: uppercase;
 }
 
 .advantages__number {
-  @include mixins.text--normal(14px, #333333);
+  @include mixins.text--normal(14px, variables.$text-color-secondary);
   text-transform: uppercase;
 }
 
 .advantages__number--photo {
-  @include mixins.text--normal(14px, #FFFFFF);
+  @include mixins.text--normal(14px, variables.$text-color-alternate);
   text-transform: uppercase;
 }
 
-.advantages__description {
-  @include mixins.text--normal(14px, #333333);
+.advantages__text {
+  @include mixins.text--normal(14px, variables.$text-color-secondary);
   text-transform: uppercase;
 }
 
-.advantages__description--photo {
-  @include mixins.text--normal(14px, #FFFFFF);
+.advantages__text--photo {
+  @include mixins.text--normal(14px, variables.$text-color-alternate);
   text-transform: uppercase;
 }
 
