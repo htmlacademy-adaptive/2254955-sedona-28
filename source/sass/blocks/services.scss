@@ -26,20 +26,20 @@
 }
 
 .services__item {
-  max-width: 284px;
+  width: 100%;
   min-height: 113px;
 
   padding: 0 0 0 47px;
 
   @media (min-width: variables.$tablet-width) {
-    max-width: 256px;
+    width: 33%;
     min-height: 331px;
 
     padding: 158px 33px 60px 33px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: 400px;
+    width: 33%;
     min-height: 330px;
 
     padding: 169px 50px 69px 50px;
