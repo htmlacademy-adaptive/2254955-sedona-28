@@ -1,15 +1,26 @@
-.main-header {
+@use "../variables";
 
+.main-header {
+  position: relative;
 }
 
 .main-header__logo {
-
+  position: absolute;
+  left: calc(50% - 96px);
 }
 
 .main-header__image {
-
+  display: block;
 }
 
 .main-header__nav {
+  position: relative;
 
+  @media (min-width: variables.$tablet-width) {
+    position: static;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: static;
+  }
 }

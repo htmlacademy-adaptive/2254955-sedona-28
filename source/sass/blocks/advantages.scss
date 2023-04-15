@@ -8,7 +8,6 @@
 .advantages__header {
   padding: 32px 18px 16px 18px ;
 
-
   @media (min-width: variables.$tablet-width) {
     padding: 47px 124px 56px 124px;
   }
@@ -44,6 +43,8 @@
 
 .advantages__list {
   @include mixins.reset-list;
+  display: grid;
+  grid-template-row: repeat(4, 1fr);
 }
 
 .advantages__item {
@@ -52,50 +53,172 @@
 
 .advantages__item--photo {
   background-color: #81b3d2;
+
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: 256px 1fr;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+  }
+}
+
+.advantages__item--photo-reverse {
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 1fr 256px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 1fr 400px;
+  }
 }
 
 .advantages__item--services {
 
 }
 
-.advantages__card {
+.advantages__services {
 
+}
+
+.advantages__group {
+
+}
+
+.advantages__card {
+  padding: 33px 18px 40px 18px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 52px 33px 31px 33px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 52px 50px 51px 50px;
+  }
 }
 
 .advantages__name {
-  @include mixins.text--bold(18px, variables.$text-color-primary);
+  @include mixins.reset-header-paragraph;
   text-transform: uppercase;
+  text-align: center;
+
+  @include mixins.text--bold(18px, variables.$text-color-primary);
+  margin-bottom: 11px;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.text--bold(21px, variables.$text-color-primary);
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    @include mixins.text--bold(21px, variables.$text-color-primary);
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__name--photo {
-  @include mixins.text--bold(18px, variables.$text-color-alternate);
+  @include mixins.reset-header-paragraph;
   text-transform: uppercase;
+  text-align: center;
+
+  @include mixins.text--bold(18px, variables.$text-color-alternate);
+  margin-bottom: 11px;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.text--bold(21px, variables.$text-color-alternate);
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    @include mixins.text--bold(21px, variables.$text-color-alternate);
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__number {
-  @include mixins.text--normal(14px, variables.$text-color-secondary);
+  @include mixins.reset-header-paragraph;
   text-transform: uppercase;
+  text-align: center;
+
+  @include mixins.text--normal(14px, variables.$text-color-secondary);
+  margin-bottom: 17px;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.text--normal(21px, variables.$text-color-secondary);
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    @include mixins.text--normal(21px, variables.$text-color-secondary);
+    margin-bottom: 26px;
+  }
 }
 
 .advantages__number--photo {
-  @include mixins.text--normal(14px, variables.$text-color-alternate);
+  @include mixins.reset-header-paragraph;
   text-transform: uppercase;
+  text-align: center;
+
+  @include mixins.text--normal(14px, variables.$text-color-alternate);
+  margin-bottom: 17px;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.text--normal(21px, variables.$text-color-alternate);
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    @include mixins.text--normal(21px, variables.$text-color-alternate);
+    margin-bottom: 26px;
+  }
 }
 
 .advantages__text {
   @include mixins.text--normal(14px, variables.$text-color-secondary);
+  @include mixins.reset-header-paragraph;
   text-transform: uppercase;
 }
 
 .advantages__text--photo {
   @include mixins.text--normal(14px, variables.$text-color-alternate);
+  @include mixins.reset-header-paragraph;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages__photo-wrapper {
 
 }
 
-.advantages__photo {
+.advantages__photo-wrapper-reverse {
 
+  @media (min-width: variables.$tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    order: -1;
+  }
+}
+
+.advantages__photo {
+  display: block;
+  object-fit: cover;
+  background-color: #82B3D3;
+
+  width: 320px;
+  height: 260px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 800px;
+    height: 256px;
+  }
 }

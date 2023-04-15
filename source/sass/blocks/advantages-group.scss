@@ -1,0 +1,26 @@
+@use "../mixins";
+@use "../variables";
+
+.advantages__group {
+
+}
+
+.advantages-group__list {
+  @include mixins.reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages-group__item {
+
+  @media (min-width: variables.$tablet-width) {
+    max-width: 256px;
+    min-height: 256px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    max-width: 400px;
+    min-height: 256px;
+  }
+}
