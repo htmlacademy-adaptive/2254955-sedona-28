@@ -6,15 +6,16 @@
 }
 
 .video__wrapper {
-  padding: 17px 26px 38px 28px;
   margin: 0 auto;
 
   min-width: 266px;
   max-width: 360px;
+  padding: 17px 26px 38px 28px;
 
   @media (min-width: variables.$tablet-width) {
     min-width: 445px;
     max-width: 560px;
+    padding: 62px 0 70px 0;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -50,26 +51,29 @@
   @include mixins.text--normal(14px, variables.$text-color-secondary);
 
   @media (min-width: variables.$tablet-width) {
-    @include mixins.text--normal(21px, variables.$text-color-secondary);
+    @include mixins.text--normal(14px, variables.$text-color-secondary);
   }
 
   @media (min-width: variables.$desktop-width) {
-    @include mixins.text--normal(21px, variables.$text-color-secondary);
+    @include mixins.text--normal(14px, variables.$text-color-secondary);
   }
 }
 
 .video__image {
+  object-fit: cover;
   margin: 0 20px;
   width: calc(100% - 40px);
   min-height: 177px;
 
   @media (min-width: variables.$tablet-width) {
-    width: 648px;
-    min-height: 683px;
+    margin: 0 60px;
+    width: calc(100% - 120px);
+    max-height: 683px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 800px;
+    margin: 0 200px;
+    width: calc(100% - 400px);
     min-height: 681px;
   }
 }
