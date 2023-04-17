@@ -21,12 +21,39 @@
   }
 }
 
+.hero--all-page {
+  padding: 52px 45px 42% 46px;
+  max-height: 158px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 95px 154px 40% 157px;
+    max-height: 290px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 101px 370px 40% 370px;
+    max-height: 301px;
+  }
+}
+
 .hero__logo {
   display: block;
   margin: 0 auto;
   color: #000000;
 
   max-height: 214px;
+
+  @media (min-width: variables.$tablet-width) {
+    max-height: 350px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    max-height: 350px;
+  }
+}
+
+.hero__logo--all-page {
+  max-height: 229px;
 
   @media (min-width: variables.$tablet-width) {
     max-height: 350px;
