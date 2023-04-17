@@ -10,23 +10,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: #EEEEEE;
 
   padding: 24px 18px 24px 18px;
-  gap: 24px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 0;
-    gap: 0;
   }
 
   @media (min-width: variables.$desktop-width) {
     padding: 0;
-    gap: 0;
   }
 }
 
 .advantages-group__item {
-  width: 284px;
+
+  @media (max-width: variables.$mobile-width-only) {
+    width: 100%;
+  }
+
   min-height: 113px;
 
   @media (min-width: variables.$tablet-width) {
@@ -37,5 +39,11 @@
   @media (min-width: variables.$desktop-width) {
     width: 33%;;
     min-height: 256px;
+  }
+}
+
+.advantages-group__item:not(:last-child) {
+  @media (max-width: variables.$mobile-width-only) {
+    border-bottom: 1px solid #D6D6D6;
   }
 }

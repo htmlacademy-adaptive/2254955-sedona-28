@@ -6,16 +6,17 @@
 }
 
 .main-nav__toggle {
-  display: block;
   position: absolute;
   left: calc(100% - 42px);
   bottom: calc(100% - 40px);
   width: 23px;
   height: 22px;
-
   background-image: url("../../img/buttons/burger.svg");
   background-repeat: no-repeat;
+  background-color: white;
   border: none;
+
+  display: block;
 
   @media (min-width: variables.$tablet-width) {
     display: none;
@@ -51,11 +52,21 @@
   text-align: center;
 
   @media (min-width: variables.$tablet-width) {
-    min-width: 153px;
+    min-width: 20%;
   }
 
   @media (min-width: variables.$desktop-width) {
-    min-width: 240px;
+    min-width: 20%;
+  }
+}
+
+.main-nav__item:nth-child(4n+3) {
+  @media (min-width: variables.$tablet-width) {
+    margin: 0 0 0 20%;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 0 20%;
   }
 }
 

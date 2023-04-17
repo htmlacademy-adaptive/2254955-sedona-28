@@ -9,24 +9,27 @@
   @include mixins.reset-list;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
+  justify-content: center;
   padding: 23px 18px 46px 18px;
   gap: 25px;
 
   @media (min-width: variables.$tablet-width) {
+    justify-content: space-between;
     padding: 0;
     gap: 0;
   }
 
   @media (min-width: variables.$desktop-width) {
+    justify-content: space-between;
     padding: 0;
     gap: 0;
   }
 }
 
 .services__item {
-  width: 100%;
+  min-width: 284px;
+  max-width: 400px;
   min-height: 113px;
 
   padding: 0 0 0 47px;
