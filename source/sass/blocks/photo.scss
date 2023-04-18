@@ -1,4 +1,5 @@
 @use "../mixins";
+@use "../variables";
 
 .photo {
 
@@ -6,8 +7,29 @@
 
 .photo__list {
   @include mixins.reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: variables.$mobile-width-only) {
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .photo__item {
-
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+  }
 }

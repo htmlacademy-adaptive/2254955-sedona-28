@@ -1,20 +1,73 @@
 @use "../mixins";
+@use "../variables";
 
 .main-nav {
-
+  min-height: 56px;
 }
 
 .main-nav__toggle {
+  position: absolute;
+  left: calc(100% - 42px);
+  bottom: calc(100% - 40px);
+  width: 23px;
+  height: 22px;
+  background-image: url("../../img/buttons/burger.svg");
+  background-repeat: no-repeat;
+  background-color: white;
+  border: none;
 
+  display: block;
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
   @include mixins.reset-list;
+  justify-content: space-between;
+
+  display: none;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 18px 10px 17px 10px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 18px 10px 17px 10px;
+  }
 }
 
 .main-nav__item {
-  @include mixins.text--bold(14px, #000000);
+  @include mixins.text--bold(14px, variables.$text-color-primary);
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    min-width: 20%;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-width: 20%;
+  }
+}
+
+.main-nav__item:nth-child(4n+3) {
+  @media (min-width: variables.$tablet-width) {
+    margin: 0 0 0 20%;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 0 20%;
+  }
 }
 
 .main-nav__item--current {

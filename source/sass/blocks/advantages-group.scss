@@ -1,0 +1,49 @@
+@use "../mixins";
+@use "../variables";
+
+.advantages__group {
+
+}
+
+.advantages-group__list {
+  @include mixins.reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #EEEEEE;
+
+  padding: 24px 18px 24px 18px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0;
+  }
+}
+
+.advantages-group__item {
+
+  @media (max-width: variables.$mobile-width-only) {
+    width: 100%;
+  }
+
+  min-height: 113px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 33%;;
+    min-height: 256px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 33%;;
+    min-height: 256px;
+  }
+}
+
+.advantages-group__item:not(:last-child) {
+  @media (max-width: variables.$mobile-width-only) {
+    border-bottom: 1px solid #D6D6D6;
+  }
+}

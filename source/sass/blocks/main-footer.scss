@@ -1,19 +1,53 @@
+@use "../variables";
+
 .main-footer {
 
 }
 
 .main-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  flex-direction: column;
+  padding: 33px 70px 33px 70px;
+
+  @media (min-width: variables.$tablet-width) {
+    flex-direction: row;
+    padding: 36px 60px 36px 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    flex-direction: row;
+    padding: 36px 60px 36px 60px;
+  }
 }
 
 .main-footer__hashtag {
+  margin-bottom: 30px;
 
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main-footer__social {
+  max-width: 156px;
+  margin: 0 auto 30px;
 
+  @media (min-width: variables.$tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__about {
-
+  max-width: 129px;
 }

@@ -6,12 +6,24 @@
 
 .social__list {
   @include mixins.reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 156px;
 }
 
 .social__item {
-
+  min-width: 48px;
+  min-height: 48px;
+  background-color: #81B3D2;
 }
 
 .social__link {
+  display: block;
+  padding: 12px;
+}
 
+.social__icon {
+  width: 24px;
+  height: 24px;
 }

@@ -1,11 +1,23 @@
+@use "../mixins";
+@use "../variables";
+
 .about {
 
 }
 
 .about__title {
-
+  @include mixins.text--normal(14px, variables.$text-color-primary);
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 13px 40px 13px 0;
 }
 
 .about__link {
+  position: relative;
+}
 
+.about__icon {
+  position: absolute;
+  left: calc(100% + 110px);
+  top: calc(100% - 40px);
 }

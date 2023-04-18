@@ -1,13 +1,23 @@
-.page {
+@use "../variables";
 
+.page {
+  height: 100%;
 }
 
 .page__body {
+  min-width: 320px;
 
+  @media (min-width: variables.$desktop-width) {
+    background-color: #E7E5E5;
+  }
 }
 
 .page__wrapper {
+  background-color: #FFFFFF;
 
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 40px;
+  }
 }
 
 .page__header {

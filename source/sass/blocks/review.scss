@@ -1,4 +1,5 @@
 @use "../mixins";
+@use "../variables";
 
 .review {
 
@@ -9,19 +10,43 @@
 }
 
 .review__header {
+  padding: 36px 20px 28px 20px;
+  border-bottom: 1px solid #E5E5E5;
 
+  @media (min-width: variables.$tablet-width) {
+    padding: 64px 166px 108px 166px;
+    border-bottom: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 115px 382px 68px 382px;
+    border-bottom: none;
+  }
 }
 
 .review__title {
-  @include mixins.text--bold(18px, #000000);
+  @include mixins.reset-header-paragraph;
+  @include mixins.text--bold(18px, variables.$text-color-primary);
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .review__subtitle {
-  @include mixins.text--normal(14px, #333333);
+  @include mixins.reset-header-paragraph;
+  @include mixins.text--normal(14px, variables.$text-color-secondary);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .review__form {
+
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content;
+    padding: 0 60px;
+    row-gap: 48px;
+  }
 
 }
