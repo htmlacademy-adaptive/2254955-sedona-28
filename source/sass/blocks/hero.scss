@@ -2,7 +2,7 @@
 
 .hero {
   background-size: contain, cover;
-  background-position: bottom;
+  background-position: bottom, bottom;
   color: #FFFFFF;
   background-color: #DDEBF4;
   background-repeat: no-repeat;
@@ -41,14 +41,14 @@
   margin: 0 auto;
   color: #000000;
 
-  max-height: 214px;
+
 
   @media (min-width: variables.$tablet-width) {
-    max-height: 350px;
+
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-height: 350px;
+
   }
 }
 

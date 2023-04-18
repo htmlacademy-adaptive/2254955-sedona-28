@@ -26,6 +26,7 @@
 }
 
 .card__image {
+  display: block;
   object-fit: cover;
 
   @media (max-width: variables.$mobile-width-only) {
@@ -62,7 +63,8 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: calc(100% - 80px);
+    min-height: 80px;
+    top: calc(100% - 89px);
   }
 }
 
