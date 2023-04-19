@@ -12,7 +12,7 @@
         <a class="main-header__logo" href="#">
           <img class="main-header__image" src="img/logo.svg" alt="Логотип города «Седона»." width="185" height="96">
         </a>
-        <nav class="main-header__nav main-nav">
+        <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -130,7 +130,13 @@
 
         <section class="map">
           <h2 class="visually-hidden">Карта.</h2>
-          <img class="map__image" src="img/map/map-desktop.jpg" alt="Расположение Седоны на карте.">
+          <iframe class="map__image"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.4619773392023!2d-111.76356452363291!3d34.869743874122854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da30a955c760b%3A0x32c09087928922ff!2sSedona!5e0!3m2!1sen!2sru!4v1681935326827!5m2!1sen!2sru"
+            width="766"
+            height="560"
+            allowfullscreen
+            title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"
+          ></iframe>
         </section>
       </main>
 
@@ -182,5 +188,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

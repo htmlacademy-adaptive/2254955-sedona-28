@@ -7,10 +7,33 @@
 
 .modal--failure {
   display: none;
+  min-height: 280px;
 }
 
 .modal--success {
   display: none;
+  min-height: 323px;
+}
+
+.modal__wrapper {
+
+  background-color: #FFFFFF;
+  height: min-content;
+
+  @media (max-width: variables.$mobile-width-only) {
+    margin-top: 116px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    width: 400px;
+    margin: 283px auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 640px;
+    margin: 162px auto;
+  }
+
 }
 
 .modal__content-wrapper {
@@ -44,7 +67,18 @@
   border: none;
   padding: 18px 20px 14px 20px;
   display: block;
-  margin: 0 auto;
+
+  @media (max-width: variables.$mobile-width-only) {
+    margin: 0 auto 35px auto;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0 auto 20px auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 auto 20px auto;
+  }
 
   min-width: 180px;
   max-width: 280px;
