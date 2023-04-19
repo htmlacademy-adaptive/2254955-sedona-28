@@ -50,7 +50,7 @@
   display: block;
 
   @media (max-width: variables.$mobile-width-only) {
-    z-index: 2;
+    z-index: 1;
     background-color: white;
   }
 
