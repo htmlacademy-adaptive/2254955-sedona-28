@@ -13,6 +13,9 @@
 }
 
 .page__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   background-color: #FFFFFF;
 
   @media (min-width: variables.$desktop-width) {
@@ -21,15 +24,15 @@
 }
 
 .page__header {
-
+  min-height: 54px;
 }
 
 .page__main {
-
+  flex-grow: 1;
 }
 
 .page__footer {
-
+  min-height: 120px;
 }
 
 .page__modal {
