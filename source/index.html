@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -38,7 +42,11 @@
 
         <section class="hero">
           <h2 class="visually-hidden">Седона.</h2>
-          <img class="hero__logo" src="img/hero/welcome.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/hero/welcome.svg">
+            <source media="(min-width: 768px)" srcset="img/hero/welcome.svg">
+            <img class="hero__logo" src="img/hero/welcome.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+          </picture>
         </section>
 
         <section class="advantages">
@@ -57,7 +65,11 @@
                 <p class="advantages__text advantages__text--photo">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="advantages__photo-wrapper">
-                <img class="advantages__photo" src="img/advantages/photo-city.jpg" alt="Домики на фоне гор.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/advantages/city-desktop.jpg 1x, img/advantages/city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/advantages/city-tablet.jpg 1x, img/advantages/city-tablet@2x.jpg 2x">
+                  <img class="advantages__photo" src="img/advantages/city-mobile.jpg" srcset="img/advantages/city-mobile@2x.jpg 2x" width="320" height="260" alt="Домики на фоне гор.">
+                </picture>
               </div>
             </li>
             <li class="advantages__item advantages__item--services">
@@ -85,7 +97,11 @@
                 <p class="advantages__text advantages__text--photo">Да, по нему можно пройти! Если вы осмелитесь,разумеется</p>
               </div>
               <div class="advantages__photo-wrapper advantages__photo-wrapper-reverse">
-                <img class="advantages__photo" src="img/advantages/photo-bridge.jpg" alt="Каньон, горы, снова горы.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/advantages/bridge-desktop.jpg 1x, img/advantages/bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/advantages/bridge-tablet.jpg 1x, img/advantages/bridge-tablet@2x.jpg 2x">
+                  <img class="advantages__photo" src="img/advantages/bridge-mobile.jpg" srcset="img/advantages/bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Каньон, горы, снова горы.">
+                </picture>
               </div>
             </li>
             <li class="advantages__item advantages__item--group">
