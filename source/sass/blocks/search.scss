@@ -64,3 +64,8 @@
     width: 458px;
   }
 }
+
+.search__link--disable {
+  background-color: #E5E5E5;
+  pointer-events: none;
+}

@@ -2,22 +2,37 @@
 @use "../variables";
 
 .about {
+  color: variables.$text-color-primary;
 
-}
 
-.about__title {
-  @include mixins.text--normal(14px, variables.$text-color-primary);
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 13px 40px 13px 0;
 }
 
 .about__link {
   position: relative;
+  color: variables.$text-color-primary;
+
+  & svg {
+    color: variables.$text-color-primary;
+  }
+
+  &:hover .about__title, &:hover svg {
+    color: #81B3D2;
+  }
+
+  &:active .about__title, &:active svg {
+    color: #B3B3B3;
+  }
 }
 
 .about__icon {
   position: absolute;
-  left: calc(100% + 110px);
-  top: calc(100% - 40px);
+  left: calc(100% - 30px);
+  top: calc(100% - 25px);
+}
+
+.about__title {
+  @include mixins.text--normal(14px, inherit);
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 13px 40px 13px 0;
 }
