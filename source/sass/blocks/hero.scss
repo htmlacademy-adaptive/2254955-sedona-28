@@ -3,10 +3,9 @@
 .hero {
   background-size: contain, cover;
   background-position: bottom, bottom;
-  color: #FFFFFF;
-  background-color: #DDEBF4;
+  color: #ffffff;
+  background-color: #ddebf4;
   background-repeat: no-repeat;
-
   background-image: url("../../img/backgrounds/divider.svg"), url("../../img/backgrounds/background-index-mobile.jpg");
   padding: 90px 19px 22% 19px;
 
@@ -34,7 +33,6 @@
 }
 
 .hero--all-page {
-
   background-image: url("../../img/backgrounds/divider.svg"), url("../../img/backgrounds/background-mobile.jpg");
   padding: 52px 45px 42% 46px;
   max-height: 158px;
@@ -68,16 +66,6 @@
   display: block;
   margin: 0 auto;
   color: #000000;
-
-
-
-  @media (min-width: variables.$tablet-width) {
-
-  }
-
-  @media (min-width: variables.$desktop-width) {
-
-  }
 }
 
 .hero__logo--all-page {

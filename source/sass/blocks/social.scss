@@ -1,9 +1,5 @@
 @use "../mixins";
 
-.social {
-
-}
-
 .social__list {
   @include mixins.reset-list;
   display: flex;
@@ -20,14 +16,14 @@
 .social__link {
   display: block;
   padding: 12px;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
 
   &:hover {
-    background-color: #669EC0;
+    background-color: #669ec0;
   }
 
   &:active {
-    background-color: #5496BD;
+    background-color: #5496bd;
   }
 
   &:active svg {

@@ -44,17 +44,17 @@
   position: relative;
 }
 
-.checkbox__name:before {
+.checkbox__name::before {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   width: 46px;
   height: 46px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
-.checkbox__input:checked ~ .checkbox__name:after {
+.checkbox__input:checked ~ .checkbox__name::after {
   position: absolute;
   content: "";
   left: calc(0% + 12px);

@@ -14,14 +14,14 @@
 .main-nav--closed .main-nav__toggle {
   @media (max-width: variables.$mobile-width-only) {
     background-image: url("../../img/buttons/burger.svg");
-    background-color: white;
+    background-color: #ffffff;
   }
 }
 
 .main-nav--opened .main-nav__toggle {
   @media (max-width: variables.$mobile-width-only) {
     background-image: url("../../img/buttons/close.svg");
-    background-color: #81B3D2;
+    background-color: #81b3d2;
   }
 }
 
@@ -51,7 +51,7 @@
 
   @media (max-width: variables.$mobile-width-only) {
     z-index: 1;
-    background-color: white;
+    background-color: #ffffff;
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -103,22 +103,20 @@
     }
 
     &:last-child {
-      box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
       position: relative;
     }
 
-    &:last-child:after {
+    &:last-child::after {
       content: "";
       position: absolute;
       width: 100%;
       height: 7px;
-
       bottom: 0;
       left: 0;
       right: 0;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
     }
-
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -148,22 +146,22 @@
   width: auto;
 
   @media (max-width: variables.$mobile-width-only) {
-    background-color: #81B3D2;
+    background-color: #81b3d2;
     padding: 17px 70px 12px 70px;
 
     &:hover {
-      background-color: #669EC0;
+      background-color: #669ec0;
     }
 
     &:active {
-      background-color: #5496BD;
+      background-color: #5496bd;
       opacity: 0.3;
     }
   }
 
   @media (min-width: variables.$tablet-width) {
     &:hover {
-      color: #81B3D2;
+      color: #81b3d2;
     }
 
     &:active {
@@ -174,7 +172,7 @@
 
   @media (min-width: variables.$desktop-width) {
     &:hover {
-      color: #81B3D2;
+      color: #81b3d2;
     }
 
     &:active {

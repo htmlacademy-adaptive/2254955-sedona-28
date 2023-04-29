@@ -21,7 +21,7 @@
 
 .card:not(:last-child) {
   @media (max-width: variables.$mobile-width-only) {
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid #e5e5e5;
   }
 }
 
@@ -54,7 +54,7 @@
     margin: 0;
     padding: 22px 20px 15px 20px;
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
   }

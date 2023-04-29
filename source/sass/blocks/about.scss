@@ -3,8 +3,6 @@
 
 .about {
   color: variables.$text-color-primary;
-
-
 }
 
 .about__link {
@@ -15,12 +13,14 @@
     color: variables.$text-color-primary;
   }
 
-  &:hover .about__title, &:hover svg {
-    color: #81B3D2;
+  &:hover .about__title,
+  &:hover svg {
+    color: #81b3d2;
   }
 
-  &:active .about__title, &:active svg {
-    color: #B3B3B3;
+  &:active .about__title,
+  &:active svg {
+    color: #b3b3b3;
   }
 }
 

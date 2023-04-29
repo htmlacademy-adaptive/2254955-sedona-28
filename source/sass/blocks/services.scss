@@ -1,10 +1,6 @@
 @use "../mixins";
 @use "../variables";
 
-.services {
-
-}
-
 .services__list {
   @include mixins.reset-list;
   display: flex;
