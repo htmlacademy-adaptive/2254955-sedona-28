@@ -141,41 +141,31 @@
 .main-nav__link {
   color: inherit;
   text-decoration: none;
-
   display: block;
   width: auto;
 
   @media (max-width: variables.$mobile-width-only) {
     background-color: #81b3d2;
     padding: 17px 70px 12px 70px;
+  }
 
-    &:hover {
+  &:hover {
+    @media (max-width: variables.$mobile-width-only) {
       background-color: #669ec0;
     }
 
-    &:active {
+    @media (min-width: variables.$tablet-width) {
+      color: #81b3d2;
+    }
+  }
+
+  &:active {
+    @media (max-width: variables.$mobile-width-only) {
       background-color: #5496bd;
       opacity: 0.3;
     }
-  }
 
-  @media (min-width: variables.$tablet-width) {
-    &:hover {
-      color: #81b3d2;
-    }
-
-    &:active {
-      color: #000000;
-      opacity: 0.3;
-    }
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    &:hover {
-      color: #81b3d2;
-    }
-
-    &:active {
+    @media (min-width: variables.$tablet-width) {
       color: #000000;
       opacity: 0.3;
     }

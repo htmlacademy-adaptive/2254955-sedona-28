@@ -8,19 +8,20 @@
 .about__link {
   position: relative;
   color: variables.$text-color-primary;
+  fill: variables.$text-color-primary;
 
-  & svg {
-    color: variables.$text-color-primary;
-  }
-
-  &:hover .about__title,
-  &:hover svg {
+  &:hover {
     color: #81b3d2;
+    fill: #81b3d2;
   }
 
-  &:active .about__title,
-  &:active svg {
+  &:active {
     color: #b3b3b3;
+    fill: #b3b3b3;
+  }
+
+  & .about__title {
+    color: inherit;
   }
 }
 
@@ -33,6 +34,7 @@
 .about__title {
   @include mixins.text--normal(14px, inherit);
   text-transform: uppercase;
+  vertical-align: center;
   display: inline-block;
   padding: 13px 40px 13px 0;
 }

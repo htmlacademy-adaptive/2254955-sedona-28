@@ -1,14 +1,7 @@
 @use "../mixins";
 @use "../variables";
 
-.input__title {
-  @include mixins.text--bold(18px, variables.$text-color-primary);
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.input__wrapper {
+.input {
   margin-bottom: 16px;
 
   &:last-child {
@@ -22,7 +15,7 @@
   display: block;
 }
 
-.input__edit-wrapper {
+.input__wrapper {
   position: relative;
 }
 
@@ -52,16 +45,4 @@
   @include mixins.text--bold(18px, variables.$text-color-primary-opacity);
 }
 
-.input__list {
-  @include mixins.reset-list;
-}
 
-.input__textarea {
-  @include mixins.text--bold(18px, variables.$text-color-primary-opacity);
-  background-color: #f2f2f2;
-  padding: 16px;
-  resize: none;
-  height: 150px;
-  width: 100%;
-  border: none;
-}

@@ -32,7 +32,7 @@
   }
 }
 
-.hero--all-page {
+.hero--inner {
   background-image: url("../img/backgrounds/divider.svg"), url("../img/backgrounds/background-mobile.jpg");
   padding: 52px 45px 42% 46px;
   max-height: 158px;
@@ -68,7 +68,7 @@
   color: #000000;
 }
 
-.hero__logo--all-page {
+.hero__logo--inner {
   max-height: 229px;
 
   @media (min-width: variables.$tablet-width) {

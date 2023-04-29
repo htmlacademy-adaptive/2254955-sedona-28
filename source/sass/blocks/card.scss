@@ -9,7 +9,7 @@
   }
 }
 
-.card:first-child {
+.card--full {
   @media (min-width: variables.$tablet-width) {
     grid-column: 1/3;
   }

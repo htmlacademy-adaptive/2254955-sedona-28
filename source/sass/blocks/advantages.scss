@@ -41,7 +41,7 @@
   @include mixins.reset-list;
   display: grid;
   align-content: center;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, min-content);
 }
 
 .advantages__item {
@@ -184,6 +184,7 @@
   @include mixins.text--normal(14px, variables.$text-color-secondary);
   @include mixins.reset-header-paragraph;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages__text--photo {
