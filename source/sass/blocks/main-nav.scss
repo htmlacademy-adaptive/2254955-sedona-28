@@ -33,7 +33,6 @@
 
   & .main-nav__toggle {
     z-index: 3;
-    background-color: #81b3d2;
   }
 
   & .main-nav__toggle::before,
@@ -42,7 +41,7 @@
       content: "";
       position: absolute;
       top: 9px;
-      left: 0;
+      left: -3px;
       width: 27px;
       height: 4px;
       background-color: #ffffff;
@@ -85,7 +84,7 @@
   background-repeat: no-repeat;
   border: none;
   display: block;
-  background-color: #ffffff;
+  background-color: transparent;
 
   @media (min-width: variables.$tablet-width) {
     display: none;
