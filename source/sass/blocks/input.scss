@@ -44,5 +44,3 @@
 .input__edit::placeholder {
   @include mixins.text--bold(18px, variables.$text-color-primary-opacity);
 }
-
-
