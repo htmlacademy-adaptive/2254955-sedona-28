@@ -13,14 +13,14 @@
 
 .main-nav--closed .main-nav__toggle {
   @media (max-width: variables.$mobile-width-only) {
-    background-image: url("img/buttons/burger.svg");
+    background-image: url("../img/buttons/burger.svg");
     background-color: #ffffff;
   }
 }
 
 .main-nav--opened .main-nav__toggle {
   @media (max-width: variables.$mobile-width-only) {
-    background-image: url("img/buttons/close.svg");
+    background-image: url("../img/buttons/close.svg");
     background-color: #81b3d2;
   }
 }
