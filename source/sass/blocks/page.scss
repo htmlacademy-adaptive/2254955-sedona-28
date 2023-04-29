@@ -19,7 +19,8 @@
   background-color: #ffffff;
 
   @media (min-width: variables.$desktop-width) {
-    margin: 0 40px;
+    margin: 0 auto;
+    max-width: 1200px;
   }
 }
 
