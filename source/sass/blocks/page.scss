@@ -8,7 +8,7 @@
   min-width: 320px;
 
   @media (min-width: variables.$desktop-width) {
-    background-color: #E7E5E5;
+    background-color: #e7e5e5;
   }
 }
 
@@ -16,10 +16,11 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 
   @media (min-width: variables.$desktop-width) {
-    margin: 0 40px;
+    margin: 0 auto;
+    max-width: 1200px;
   }
 }
 

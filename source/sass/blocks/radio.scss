@@ -2,30 +2,6 @@
 @use "../variables";
 
 .radio {
-  @media (min-width: variables.$tablet-width) {
-    column-gap: 16px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: min-content;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    column-gap: 28px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: min-content;
-  }
-}
-
-.radio__item {
-  margin-bottom: 16px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.radio__label {
   position: relative;
   display: block;
   min-height: 46px;
@@ -44,26 +20,24 @@
   position: relative;
 }
 
-.radio__name:before {
+.radio__name::before {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   width: 46px;
   height: 46px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 50%;
 }
 
-.radio__input:checked ~ .radio__name:after {
+.radio__input:checked ~ .radio__name::after {
   position: absolute;
   content: "";
-
   left: calc(0% + 16px);
   top: calc(0% + 16px);
   width: 16px;
   height: 16px;
   background-color: #333333;
   border-radius: 50%;
-
 }

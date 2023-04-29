@@ -1,14 +1,6 @@
 @use "../mixins";
 @use "../variables";
 
-.gallery {
-
-}
-
-.gallery__wrapper {
-
-}
-
 .gallery__header {
   padding: 30px 20px 17px 20px;
 
@@ -54,8 +46,4 @@
   @media (min-width: variables.$desktop-width) {
     @include mixins.text--normal(14px, variables.$text-color-secondary);
   }
-}
-
-.gallery__photo {
-
 }

@@ -2,17 +2,6 @@
 @use "../variables";
 
 .input {
-
-}
-
-.input__title {
-  @include mixins.text--bold(18px, variables.$text-color-primary);
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.input__wrapper {
   margin-bottom: 16px;
 
   &:last-child {
@@ -26,7 +15,7 @@
   display: block;
 }
 
-.input__edit-wrapper {
+.input__wrapper {
   position: relative;
 }
 
@@ -34,7 +23,6 @@
   @include mixins.text--bold(18px, variables.$text-color-primary);
   border: none;
   background: #f2f2f2;
-
   padding: 16px;
   width: 100%;
 }
@@ -50,28 +38,11 @@
   left: calc(100% - 58px);
   top: 0;
   padding: 20px;
-
-  background-color: #E6E6E6;
-}
-
-.input__icon {
-
+  background-color: #e6e6e6;
 }
 
 .input__edit::placeholder {
   @include mixins.text--bold(18px, variables.$text-color-primary-opacity);
 }
 
-.input__list {
-  @include mixins.reset-list;
-}
 
-.input__textarea {
-  @include mixins.text--bold(18px, variables.$text-color-primary-opacity);
-  background-color: #F2F2F2;
-  padding: 16px;
-  resize: none;
-  height: 150px;
-  width: 100%;
-  border: none;
-}

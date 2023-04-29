@@ -2,22 +2,39 @@
 @use "../variables";
 
 .about {
-
-}
-
-.about__title {
-  @include mixins.text--normal(14px, variables.$text-color-primary);
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 13px 40px 13px 0;
+  color: variables.$text-color-primary;
 }
 
 .about__link {
   position: relative;
+  color: variables.$text-color-primary;
+  fill: variables.$text-color-primary;
+
+  &:hover {
+    color: #81b3d2;
+    fill: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+    fill: #b3b3b3;
+  }
+
+  & .about__title {
+    color: inherit;
+  }
 }
 
 .about__icon {
   position: absolute;
-  left: calc(100% + 110px);
-  top: calc(100% - 40px);
+  left: calc(100% - 30px);
+  top: calc(100% - 25px);
+}
+
+.about__title {
+  @include mixins.text--normal(14px, inherit);
+  text-transform: uppercase;
+  vertical-align: center;
+  display: inline-block;
+  padding: 13px 40px 13px 0;
 }

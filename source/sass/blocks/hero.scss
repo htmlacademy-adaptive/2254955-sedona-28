@@ -3,36 +3,62 @@
 .hero {
   background-size: contain, cover;
   background-position: bottom, bottom;
-  color: #FFFFFF;
-  background-color: #DDEBF4;
+  color: #ffffff;
+  background-color: #ddebf4;
   background-repeat: no-repeat;
-
-  background-image: url("../../img/backgrounds/divider.svg"), url("../../img/backgrounds/index.jpg");
+  background-image: url("../img/backgrounds/divider.svg"), url("../img/backgrounds/background-index-mobile.jpg");
   padding: 90px 19px 22% 19px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/divider.svg"), url("../img/backgrounds/background-index-mobile@2x.jpg");
+  }
+
   @media (min-width: variables.$tablet-width) {
-    background-image: url("../../img/backgrounds/divider-tablet.svg"), url("../../img/backgrounds/index.jpg");
+    background-image: url("../img/backgrounds/divider-tablet.svg"), url("../img/backgrounds/background-index-tablet.jpg");
     padding: 77px 154px 17% 153px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/divider.svg"), url("../img/backgrounds/background-index-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: variables.$desktop-width) {
-    background-image: url("../../img/backgrounds/divider-desktop.svg"), url("../../img/backgrounds/index.jpg");
+    background-image: url("../img/backgrounds/divider-desktop.svg"), url("../img/backgrounds/background-index-desktop.jpg");
     padding: 78px 370px 17% 370px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/divider.svg"), url("../img/backgrounds/background-index-desktop@2x.jpg");
+    }
   }
 }
 
-.hero--all-page {
+.hero--inner {
+  background-image: url("../img/backgrounds/divider.svg"), url("../img/backgrounds/background-mobile.jpg");
   padding: 52px 45px 42% 46px;
   max-height: 158px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/divider.svg"), url("../img/backgrounds/background-mobile@2x.jpg");
+  }
+
   @media (min-width: variables.$tablet-width) {
+    background-image: url("../img/backgrounds/divider-tablet.svg"), url("../img/backgrounds/background-tablet.jpg");
     padding: 95px 154px 40% 157px;
     max-height: 290px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/divider.svg"), url("../img/backgrounds/background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: variables.$desktop-width) {
+    background-image: url("../img/backgrounds/divider-tablet.svg"), url("../img/backgrounds/background-desktop.jpg");
     padding: 101px 370px 40% 370px;
     max-height: 301px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/divider.svg"), url("../img/backgrounds/background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -40,19 +66,9 @@
   display: block;
   margin: 0 auto;
   color: #000000;
-
-
-
-  @media (min-width: variables.$tablet-width) {
-
-  }
-
-  @media (min-width: variables.$desktop-width) {
-
-  }
 }
 
-.hero__logo--all-page {
+.hero__logo--inner {
   max-height: 229px;
 
   @media (min-width: variables.$tablet-width) {

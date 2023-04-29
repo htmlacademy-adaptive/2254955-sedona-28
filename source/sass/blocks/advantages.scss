@@ -1,12 +1,8 @@
 @use "../mixins";
 @use "../variables";
 
-.advantages {
-
-}
-
 .advantages__header {
-  padding: 32px 18px 16px 18px ;
+  padding: 32px 18px 16px 18px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 47px 124px 56px 124px;
@@ -45,7 +41,7 @@
   @include mixins.reset-list;
   display: grid;
   align-content: center;
-  grid-template-row: repeat(4, 1fr);
+  grid-template-rows: repeat(4, min-content);
 }
 
 .advantages__item {
@@ -57,7 +53,7 @@
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    background-image: url("../../img/backgrounds/divider-mobile.svg");
+    background-image: url("../img/backgrounds/divider-mobile.svg");
     padding-top: 17%;
   }
 }
@@ -77,7 +73,6 @@
 }
 
 .advantages__item--photo-reverse {
-
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: 1fr 256px;
   }
@@ -85,18 +80,6 @@
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: 1fr 400px;
   }
-}
-
-.advantages__item--services {
-
-}
-
-.advantages__services {
-
-}
-
-.advantages__group {
-
 }
 
 .advantages__card {
@@ -201,6 +184,7 @@
   @include mixins.text--normal(14px, variables.$text-color-secondary);
   @include mixins.reset-header-paragraph;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages__text--photo {
@@ -210,12 +194,7 @@
   text-align: center;
 }
 
-.advantages__photo-wrapper {
-
-}
-
 .advantages__photo-wrapper-reverse {
-
   @media (min-width: variables.$tablet-width) {
     order: -1;
   }
@@ -228,8 +207,7 @@
 .advantages__photo {
   display: block;
   object-fit: cover;
-  background-color: #82B3D3;
-
+  background-color: #82b3d3;
   width: 100%;
   min-height: 260px;
 
