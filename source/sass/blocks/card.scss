@@ -105,6 +105,22 @@
   }
 }
 
+.card__like-wrapper::before {
+  vertical-align: center;
+  display: inline-block;
+  content: "";
+  mask-image: url("../img/sprite.svg#like");
+  background-color: #000000;
+  opacity: 0.3;
+  width: 23px;
+  height: 21px;
+
+  @media (min-width: variables.$desktop-width) {
+    background-color: #ffffff;
+    opacity: 1;
+  }
+}
+
 .card__like-image {
   margin-right: 14px;
 }
@@ -114,15 +130,5 @@
 
   @media (min-width: variables.$desktop-width) {
     @include mixins.text--bold(14px, variables.$text-color-alternate);
-  }
-}
-
-.card__like-icon > path {
-  color: variables.$text-color-primary;
-  opacity: 0.3;
-
-  @media (min-width: variables.$desktop-width) {
-    color: variables.$text-color-alternate;
-    opacity: 1;
   }
 }

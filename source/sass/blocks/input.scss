@@ -41,8 +41,25 @@
   background-color: #e6e6e6;
 }
 
+.input__icon-wrapper::after {
+  display: block;
+  content: "";
+}
+
+.input__icon-wrapper--phone::after {
+  mask-image: url("../img/sprite.svg#phone");
+  width: 18px;
+  height: 18px;
+  background-color: #010101;
+}
+
+.input__icon-wrapper--email::after {
+  mask-image: url("../img/sprite.svg#email");
+  width: 16px;
+  height: 12px;
+  background-color: #000000;
+}
+
 .input__edit::placeholder {
   @include mixins.text--bold(18px, variables.$text-color-primary-opacity);
 }
-
-
