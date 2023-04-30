@@ -73,8 +73,8 @@ img {
 .about__link::after {
   display: block;
   content: "";
-  mask-image: url("../img/sprite.svg#about");
   -webkit-mask-image: url("../img/sprite.svg#about");
+          mask-image: url("../img/sprite.svg#about");
   background-color: #000000;
   width: 27px;
   height: 35px;
@@ -617,8 +617,8 @@ img {
   vertical-align: center;
   display: inline-block;
   content: "";
-  mask-image: url("../img/sprite.svg#like");
   -webkit-mask-image: url("../img/sprite.svg#like");
+          mask-image: url("../img/sprite.svg#like");
   background-color: #000000;
   opacity: 0.3;
   width: 23px;
@@ -1113,16 +1113,16 @@ img {
 }
 
 .input__icon-wrapper--phone::after {
-  mask-image: url("../img/sprite.svg#phone");
   -webkit-mask-image: url("../img/sprite.svg#phone");
+          mask-image: url("../img/sprite.svg#phone");
   width: 18px;
   height: 18px;
   background-color: #010101;
 }
 
 .input__icon-wrapper--email::after {
-  mask-image: url("../img/sprite.svg#email");
   -webkit-mask-image: url("../img/sprite.svg#email");
+          mask-image: url("../img/sprite.svg#email");
   width: 16px;
   height: 12px;
   background-color: #000000;
@@ -2021,18 +2021,18 @@ img {
 }
 
 .social__link--vk::after {
-  mask-image: url("../img/sprite.svg#vk");
   -webkit-mask-image: url("../img/sprite.svg#vk");
+          mask-image: url("../img/sprite.svg#vk");
 }
 
 .social__link--telegram::after {
-  mask-image: url("../img/sprite.svg#telegram");
   -webkit-mask-image: url("../img/sprite.svg#telegram");
+          mask-image: url("../img/sprite.svg#telegram");
 }
 
 .social__link--youtube::after {
-  mask-image: url("../img/sprite.svg#youtube");
   -webkit-mask-image: url("../img/sprite.svg#youtube");
+          mask-image: url("../img/sprite.svg#youtube");
 }
 
 .social__icon path {
