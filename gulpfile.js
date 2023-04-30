@@ -11,6 +11,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import cheerio from "gulp-cheerio";
 
 // Styles
 
@@ -76,8 +77,13 @@ const svg = () =>
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: false
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(cheerio({
+      run: ($) => {
+        $('svg').append('<style> :root svg:not(:target) { display: none } </style>');
+        $('svg').find('symbol').each((i, item) => (item.tagName = 'svg'));
+      },
+      parserOptions: { xmlMode: true }
     }))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
