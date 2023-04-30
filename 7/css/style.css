@@ -3,14 +3,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("source/fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("source/fonts/ptsansbold.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
   font-display: swap;
 }
 html {
@@ -56,17 +56,28 @@ img {
 }
 .about__link:hover {
   color: #81b3d2;
-  fill: #81b3d2;
+}
+.about__link:hover::after {
+  background-color: #81b3d2;
 }
 .about__link:active {
   color: #b3b3b3;
-  fill: #b3b3b3;
+}
+.about__link:active::after {
+  background-color: #b3b3b3;
 }
 .about__link .about__title {
   color: inherit;
 }
 
-.about__icon {
+.about__link::after {
+  display: block;
+  content: "";
+  mask-image: url("../img/sprite.svg#about");
+  -webkit-mask-image: url("../img/sprite.svg#about");
+  background-color: #000000;
+  width: 27px;
+  height: 35px;
   position: absolute;
   left: calc(100% - 30px);
   top: calc(100% - 25px);
@@ -602,6 +613,24 @@ img {
   }
 }
 
+.card__like-wrapper::before {
+  vertical-align: center;
+  display: inline-block;
+  content: "";
+  mask-image: url("../img/sprite.svg#like");
+  -webkit-mask-image: url("../img/sprite.svg#like");
+  background-color: #000000;
+  opacity: 0.3;
+  width: 23px;
+  height: 21px;
+}
+@media (min-width: 1200px) {
+  .card__like-wrapper::before {
+    background-color: #ffffff;
+    opacity: 1;
+  }
+}
+
 .card__like-image {
   margin-right: 14px;
 }
@@ -622,17 +651,6 @@ img {
     font-size: 14px;
     line-height: 26px;
     color: #ffffff;
-  }
-}
-
-.card__like-icon > path {
-  color: #000000;
-  opacity: 0.3;
-}
-@media (min-width: 1200px) {
-  .card__like-icon > path {
-    color: #ffffff;
-    opacity: 1;
   }
 }
 
@@ -1087,6 +1105,27 @@ img {
   top: 0;
   padding: 20px;
   background-color: #e6e6e6;
+}
+
+.input__icon-wrapper::after {
+  display: block;
+  content: "";
+}
+
+.input__icon-wrapper--phone::after {
+  mask-image: url("../img/sprite.svg#phone");
+  -webkit-mask-image: url("../img/sprite.svg#phone");
+  width: 18px;
+  height: 18px;
+  background-color: #010101;
+}
+
+.input__icon-wrapper--email::after {
+  mask-image: url("../img/sprite.svg#email");
+  -webkit-mask-image: url("../img/sprite.svg#email");
+  width: 16px;
+  height: 12px;
+  background-color: #000000;
 }
 
 .input__edit::placeholder {
@@ -1969,13 +2008,31 @@ img {
 .social__link:active {
   background-color: #5496bd;
 }
-.social__link:active svg {
+.social__link:active::after {
   opacity: 0.3;
 }
 
-.social__icon {
+.social__link::after {
+  display: block;
+  content: "";
+  background-color: #ffffff;
   width: 24px;
   height: 24px;
+}
+
+.social__link--vk::after {
+  mask-image: url("../img/sprite.svg#vk");
+  -webkit-mask-image: url("../img/sprite.svg#vk");
+}
+
+.social__link--telegram::after {
+  mask-image: url("../img/sprite.svg#telegram");
+  -webkit-mask-image: url("../img/sprite.svg#telegram");
+}
+
+.social__link--youtube::after {
+  mask-image: url("../img/sprite.svg#youtube");
+  -webkit-mask-image: url("../img/sprite.svg#youtube");
 }
 
 .social__icon path {
