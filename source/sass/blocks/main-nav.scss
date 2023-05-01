@@ -12,7 +12,7 @@
 }
 
 .main-nav--closed {
-  & .main-nav__toggle::before {
+  .main-nav--closed .main-nav__toggle::before {
     @media (max-width: variables.$mobile-width-only) {
       content: "";
       position: absolute;
@@ -27,37 +27,36 @@
 }
 
 .main-nav--opened {
-
   z-index: 2;
+}
 
-  & .main-nav__toggle {
-    z-index: 3;
+.main-nav--opened .main-nav__toggle {
+  z-index: 3;
+}
+
+.main-nav--opened .main-nav__toggle::before,
+.main-nav--opened .main-nav__toggle::after {
+  @media (max-width: variables.$mobile-width-only) {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -3px;
+    width: 27px;
+    height: 4px;
+    background-color: #ffffff;
   }
+}
 
-  & .main-nav__toggle::before,
-  & .main-nav__toggle::after {
-    @media (max-width: variables.$mobile-width-only) {
-      content: "";
-      position: absolute;
-      top: 9px;
-      left: -3px;
-      width: 27px;
-      height: 4px;
-      background-color: #ffffff;
-    }
+.main-nav--opened .main-nav__toggle::before {
+  @media (max-width: variables.$mobile-width-only) {
+    transform: rotate(45deg);
+    box-shadow: none;
   }
+}
 
-  & .main-nav__toggle::before {
-    @media (max-width: variables.$mobile-width-only) {
-      transform: rotate(45deg);
-      box-shadow: none;
-    }
-  }
-
-  & .main-nav__toggle::after {
-    @media (max-width: variables.$mobile-width-only) {
-      transform: rotate(-45deg);
-    }
+.main-nav--opened .main-nav__toggle::after {
+  @media (max-width: variables.$mobile-width-only) {
+    transform: rotate(-45deg);
   }
 }
 

@@ -5,6 +5,7 @@
   position: relative;
   display: block;
   min-height: 46px;
+  cursor: pointer;
 }
 
 .radio__input {
@@ -34,8 +35,8 @@
 .radio__input:checked ~ .radio__name::after {
   position: absolute;
   content: "";
-  left: calc(0% + 16px);
-  top: calc(0% + 16px);
+  left: 16px;
+  top: 16px;
   width: 16px;
   height: 16px;
   background-color: #333333;
