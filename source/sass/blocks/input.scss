@@ -35,10 +35,12 @@
   width: 58px;
   height: 58px;
   position: absolute;
-  left: calc(100% - 58px);
+  right: 0;
   top: 0;
-  padding: 20px;
   background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .input__icon-wrapper::after {

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -13,7 +13,7 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page__header main-header">
-        <a class="main-header__logo" href="#">
+        <a class="main-header__logo">
           <img class="main-header__image" src="img/logo.svg" alt="Логотип города «Седона»." width="185" height="96">
         </a>
         <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
@@ -42,11 +42,7 @@
 
         <section class="hero">
           <h2 class="visually-hidden">Седона.</h2>
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/hero/welcome.svg" width="460" height="350">
-            <source media="(min-width: 768px)" srcset="img/hero/welcome.svg" width="461" height="350">
-            <img class="hero__logo" src="img/hero/welcome.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
-          </picture>
+          <img class="hero__logo" src="img/hero/welcome.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </section>
 
         <section class="advantages">
@@ -78,15 +74,15 @@
             <li class="advantages__item advantages__item--services">
               <div class="advantages__services services">
                 <ul class="services__list">
-                  <li class="services__item services__item_home">
+                  <li class="services__item services__item--home">
                     <h3 class="services__title">Жильё</h3>
                     <p class="services__description">Рекомендуем пожить в настоящем мотеле,&nbsp;всё как в кино!</p>
                   </li>
-                  <li class="services__item services__item_food">
+                  <li class="services__item services__item--food">
                     <h3 class="services__title">Еда</h3>
                     <p class="services__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                   </li>
-                  <li class="services__item services__item_presents">
+                  <li class="services__item services__item--presents">
                     <h3 class="services__title">Сувениры</h3>
                     <p class="services__description">Не только китайского,&nbsp;но и настоящего местного производства!</p>
                   </li>

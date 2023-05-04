@@ -5,6 +5,7 @@
   position: relative;
   display: block;
   min-height: 46px;
+  cursor: pointer;
 }
 
 .checkbox__input {
@@ -33,8 +34,8 @@
 .checkbox__input:checked ~ .checkbox__name::after {
   position: absolute;
   content: "";
-  left: calc(0% + 12px);
-  top: calc(0% + 16px);
+  left: 12px;
+  top: 16px;
   width: 22px;
   height: 16px;
   background-image: url("../img/input/tick.svg");
