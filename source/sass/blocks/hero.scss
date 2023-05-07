@@ -1,63 +1,89 @@
 @use "../variables";
 
 .hero {
-  background-size: contain, cover;
-  background-position: bottom, bottom;
+  position: relative;
+  background-size: cover;
+  background-position: bottom;
   color: #ffffff;
   background-color: #ddebf4;
   background-repeat: no-repeat;
-  background-image: url("../img/backgrounds/divider-mobile.svg"), url("../img/backgrounds/background-index-mobile.webp");
+  background-image: url("../img/backgrounds/background-index-mobile.webp");
   padding: 90px 19px 22% 19px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/backgrounds/divider-mobile.svg"), url("../img/backgrounds/background-index-mobile@2x.webp");
+    background-image: url("../img/backgrounds/background-index-mobile@2x.webp");
   }
 
   @media (min-width: variables.$tablet-width) {
-    background-image: url("../img/backgrounds/divider-tablet.svg"), url("../img/backgrounds/background-index-tablet.webp");
+    background-image: url("../img/backgrounds/background-index-tablet.webp");
     padding: 77px 154px 17% 153px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/divider-tablet.svg"), url("../img/backgrounds/background-index-tablet@2x.webp");
+      background-image: url("../img/backgrounds/background-index-tablet@2x.webp");
     }
   }
 
   @media (min-width: variables.$desktop-width) {
-    background-image: url("../img/backgrounds/divider-desktop.svg"), url("../img/backgrounds/background-index-desktop.webp");
+    background-image: url("../img/backgrounds/background-index-desktop.webp");
     padding: 78px 370px 17% 370px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/divider-desktop.svg"), url("../img/backgrounds/background-index-desktop@2x.webp");
+      background-image: url("../img/backgrounds/background-index-desktop@2x.webp");
     }
   }
 }
 
+.hero::after {
+  content: "";
+  height: 57px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  @media (max-width: variables.$mobile-width-only) {
+    background-image: url("../img/backgrounds/divider-mobile.svg");
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    background-image: url("../img/backgrounds/divider-tablet.svg");
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-image: url("../img/backgrounds/divider-desktop.svg");
+  }
+}
+
 .hero--inner {
-  background-image: url("../img/backgrounds/divider-mobile.svg"), url("../img/backgrounds/background-mobile.webp");
+  background-image: url("../img/backgrounds/background-mobile.webp");
   padding: 52px 45px 42% 46px;
   max-height: 158px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/backgrounds/divider-mobile.svg"), url("../img/backgrounds/background-mobile@2x.webp");
+    background-image: url("../img/backgrounds/background-mobile@2x.webp");
   }
 
   @media (min-width: variables.$tablet-width) {
-    background-image: url("../img/backgrounds/divider-tablet.svg"), url("../img/backgrounds/background-tablet.webp");
+    background-image: url("../img/backgrounds/background-tablet.webp");
     padding: 95px 154px 40% 157px;
     max-height: 290px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/divider-tablet.svg"), url("../img/backgrounds/background-tablet@2x.webp");
+      background-image: url("../img/backgrounds/background-tablet@2x.webp");
     }
   }
 
   @media (min-width: variables.$desktop-width) {
-    background-image: url("../img/backgrounds/divider-desktop.svg"), url("../img/backgrounds/background-desktop.webp");
+    background-image: url("../img/backgrounds/background-desktop.webp");
     padding: 101px 370px 40% 370px;
     max-height: 301px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/divider-desktop.svg"), url("../img/backgrounds/background-desktop@2x.webp");
+      background-image: url("../img/backgrounds/background-desktop@2x.webp");
     }
   }
 }
