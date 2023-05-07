@@ -87,16 +87,36 @@
   transform: translate(-50%, -50%);
   border: none;
   outline: none;
-  mask-image: url("../img/sprite.svg#play");
-  background-color: rgba(255, 255, 255, 0.7);
   z-index: 2;
   cursor: pointer;
+  background-color: transparent;
+
+  &:focus {
+    @include mixins.focus(#ffffff);
+  }
+
+  &:focus-visible {
+    @include mixins.focus(#ffffff);
+  }
 }
 
-.video__button:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+.video__button svg {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.video__button:active {
-  background-color: rgba(255, 255, 255, 0.3);
+.video__button path {
+  fill: #ffffff;
+  fill-opacity: 0.7;
+}
+
+.video__button:hover path {
+  fill: #ffffff;
+  fill-opacity: 0.5;
+}
+
+.video__button:active path {
+  fill: #ffffff;
+  fill-opacity: 0.3;
 }

@@ -49,3 +49,8 @@
   line-height: 21px;
   color: $color;
 }
+
+@mixin focus($color) {
+  outline: 3px solid $color;
+  border: none;
+}

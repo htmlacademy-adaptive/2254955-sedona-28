@@ -59,6 +59,14 @@
   @media (min-width: variables.$desktop-width) {
     width: 458px;
   }
+
+  &:focus {
+    @include mixins.focus(#000000);
+  }
+
+  &:focus-visible {
+    @include mixins.focus(#000000);
+  }
 }
 
 .search__link--disable {

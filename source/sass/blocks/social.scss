@@ -26,9 +26,17 @@
     background-color: #5496bd;
   }
 
-  &:active::after {
-    opacity: 0.3;
+  &:focus {
+    @include mixins.focus(#000000);
   }
+
+  &:focus-visible {
+    @include mixins.focus(#000000);
+  }
+}
+
+.social__link:active::after {
+  opacity: 0.3;
 }
 
 .social__link::after {

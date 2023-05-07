@@ -26,9 +26,17 @@
     background-color: #b3b3b3;
   }
 
-  & .about__title {
-    color: inherit;
+  &:focus {
+    @include mixins.focus(#000000);
   }
+
+  &:focus-visible {
+    @include mixins.focus(#000000);
+  }
+}
+
+.about__link .about__title {
+  color: inherit;
 }
 
 .about__link::after {

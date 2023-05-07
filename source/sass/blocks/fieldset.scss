@@ -135,4 +135,20 @@
   height: 150px;
   width: 100%;
   border: none;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #d5d5d5;
+  }
+
+  &:focus {
+    @include mixins.focus(#000000);
+  }
+
+  &:focus-visible {
+    @include mixins.focus(#000000);
+  }
 }

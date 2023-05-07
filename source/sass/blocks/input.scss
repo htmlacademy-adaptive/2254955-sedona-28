@@ -36,6 +36,14 @@
     padding: 12px;
     outline: none;
   }
+
+  &:focus {
+    @include mixins.focus(#000000);
+  }
+
+  &:focus-visible {
+    @include mixins.focus(#000000);
+  }
 }
 
 .input__edit--icon {
@@ -43,11 +51,11 @@
 }
 
 .input__icon-wrapper {
-  width: 58px;
-  height: 58px;
+  width: 56px;
+  height: 54px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 2px;
+  top: 2px;
   background-color: #e6e6e6;
   display: flex;
   justify-content: center;
