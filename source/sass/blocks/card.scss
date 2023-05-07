@@ -117,15 +117,12 @@
   opacity: 0.3;
   width: 23px;
   height: 21px;
+  margin-right: 14px;
 
   @media (min-width: variables.$desktop-width) {
     background-color: #ffffff;
     opacity: 1;
   }
-}
-
-.card__like-image {
-  margin-right: 14px;
 }
 
 .card__like-counter {
