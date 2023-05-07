@@ -55,6 +55,10 @@
   }
 }
 
+.video__video-wrapper {
+  position: relative;
+}
+
 .video__image {
   object-fit: cover;
   margin: 0 20px;
@@ -72,4 +76,27 @@
     width: calc(100% - 400px);
     min-height: 681px;
   }
+}
+
+.video__button {
+  width: 48px;
+  height: 54px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  mask-image: url("../img/sprite.svg#play");
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.video__button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.video__button:active {
+  background-color: rgba(255, 255, 255, 0.3);
 }
