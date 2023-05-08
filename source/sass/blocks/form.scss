@@ -82,7 +82,7 @@
   border-bottom: none;
 
   @media (max-width: variables.$mobile-width-only) {
-    padding: 24px 20px 52px;
+    padding: 24px 20px 42px;
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -149,17 +149,14 @@
 .form__hint {
   text-transform: uppercase;
   text-align: right;
+  padding: 17px 0 3px 3px;
 
   @media (max-width: variables.$mobile-width-only) {
     @include mixins.text--normal(12px, rgba(51, 51, 51, 0.6));
-    padding: 17px 0 3px 3px;
+    padding: 0;
   }
 
   @media (min-width: variables.$tablet-width) {
     @include mixins.text--normal(14px, rgba(51, 51, 51, 0.6));
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    padding: 17px 0 3px 3px;
   }
 }
