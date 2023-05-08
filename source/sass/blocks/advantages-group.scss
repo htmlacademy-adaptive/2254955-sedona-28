@@ -65,4 +65,8 @@
   @media (min-width: variables.$tablet-width) {
     padding-top: 41px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 53px;
+  }
 }

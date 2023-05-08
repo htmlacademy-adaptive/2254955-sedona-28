@@ -26,7 +26,7 @@
 
   @media (min-width: variables.$desktop-width) {
     @include mixins.text--bold(21px, variables.$text-color-primary);
-    margin: 0 0 40px;
+    margin: 0 0 30px;
   }
 }
 
@@ -125,7 +125,13 @@
 
   @media (min-width: variables.$desktop-width) {
     @include mixins.text--bold(21px, variables.$text-color-primary);
-    margin-bottom: 23px;
+    margin-bottom: 13px;
+  }
+}
+
+.advantages__name br {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
   }
 }
 
@@ -144,7 +150,7 @@
 
   @media (min-width: variables.$desktop-width) {
     @include mixins.text--bold(21px, variables.$text-color-alternate);
-    margin-bottom: 23px;
+    margin-bottom: 15px;
   }
 }
 
@@ -162,8 +168,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    @include mixins.text--normal(21px, variables.$text-color-secondary);
-    margin-bottom: 26px;
+    @include mixins.text--normal(14px, variables.$text-color-secondary);
+    margin-bottom: 23px;
   }
 }
 
@@ -181,8 +187,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    @include mixins.text--normal(21px, variables.$text-color-alternate);
-    margin-bottom: 26px;
+    @include mixins.text--normal(14px, variables.$text-color-alternate);
+    margin-bottom: 23px
   }
 }
 
@@ -198,6 +204,48 @@
   @include mixins.reset-header-paragraph;
   text-transform: uppercase;
   text-align: center;
+}
+
+.advantages__text--mobile {
+  @media (max-width: variables.$mobile-width-only) {
+    display: block;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__text--tablet {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__text--desktop {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: block;
+  }
 }
 
 .advantages__photo-wrapper-reverse {

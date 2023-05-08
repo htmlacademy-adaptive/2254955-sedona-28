@@ -98,6 +98,7 @@
 .card__like-wrapper {
 
   display: block;
+  text-decoration: none;
 
   @media (max-width: variables.$mobile-width-only) {
     margin-bottom: 25px;
