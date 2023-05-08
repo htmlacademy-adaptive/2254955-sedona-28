@@ -13,7 +13,7 @@
   @include mixins.text--normal(14px, variables.$text-color-secondary);
   text-transform: uppercase;
   display: block;
-  padding: 0 14px;
+  padding: 0 16px;
 }
 
 .input__wrapper {
@@ -24,7 +24,7 @@
   @include mixins.text--bold(18px, variables.$text-color-primary);
   border: none;
   background: #f2f2f2;
-  padding: 16px 14px;
+  padding: 17px 15px 16px;
   width: 100%;
 
   &:hover {

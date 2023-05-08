@@ -47,11 +47,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content;
     padding: 0 60px;
-    row-gap: 31px;
+    row-gap: 30px;
   }
 
   @media (min-width: variables.$desktop-width) {
     padding: 0 120px;
+    row-gap: 38px;
   }
 }
 

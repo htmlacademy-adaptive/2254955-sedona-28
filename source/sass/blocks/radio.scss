@@ -6,6 +6,13 @@
   display: block;
   min-height: 46px;
   cursor: pointer;
+  min-width: 280px;
+}
+
+.radio--short {
+  @media (min-width: variables.$desktop-width) {
+    min-width: 236px;
+  }
 }
 
 .radio__input {
@@ -24,9 +31,13 @@
 
 .radio__name {
   @include mixins.text--bold(18px, variables.$text-color-primary);
-  padding: 10px 10px 13px 60px;
+  padding: 10px 10px 13px 62px;
   display: block;
   position: relative;
+}
+
+.radio__name--short {
+  padding: 10px 0 13px 62px;
 }
 
 .radio__name::before {
