@@ -60,3 +60,9 @@
     padding: 24px 18px 0 18px;
   }
 }
+
+.advantages-group__item .advantages__card {
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 41px;
+  }
+}

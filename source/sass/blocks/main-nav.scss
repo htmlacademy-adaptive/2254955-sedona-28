@@ -114,12 +114,12 @@
 
   @media (min-width: variables.$tablet-width) {
     justify-content: space-between;
-    padding: 18px 10px 17px 10px;
+    padding: 10px;
   }
 
   @media (min-width: variables.$desktop-width) {
     justify-content: space-between;
-    padding: 18px 10px 17px 10px;
+    padding: 10px;
   }
 }
 
@@ -155,11 +155,11 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    min-width: 20%;
+    width: 20%;
   }
 
   @media (min-width: variables.$desktop-width) {
-    min-width: 20%;
+    width: 20%;
   }
 }
 
@@ -182,6 +182,14 @@
   @media (max-width: variables.$mobile-width-only) {
     background-color: #81b3d2;
     padding: 17px 70px 12px 70px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 5px 18px 5px 17px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 5px 18px 5px 17px;
   }
 
   &:hover {

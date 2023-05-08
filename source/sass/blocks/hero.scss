@@ -17,6 +17,7 @@
   @media (min-width: variables.$tablet-width) {
     background-image: url("../img/backgrounds/divider-tablet.svg"), url("../img/backgrounds/background-index-tablet.webp");
     padding: 77px 154px 91px 153px;
+    max-height: 518px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/divider-tablet.svg"), url("../img/backgrounds/background-index-tablet@2x.webp");
@@ -26,6 +27,7 @@
   @media (min-width: variables.$desktop-width) {
     background-image: url("../img/backgrounds/divider-desktop.svg"), url("../img/backgrounds/background-index-desktop.webp");
     padding: 78px 370px 90px 370px;
+    max-height: 518px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/divider-desktop.svg"), url("../img/backgrounds/background-index-desktop@2x.webp");
