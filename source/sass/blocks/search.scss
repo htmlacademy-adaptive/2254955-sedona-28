@@ -3,7 +3,7 @@
 
 .search__wrapper {
   padding: 38px 29px 0 29px;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 60px 166px 0 167px;
@@ -21,7 +21,7 @@
   @include mixins.text--bold(21px, variables.$text-color-primary);
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .search__description {
@@ -49,6 +49,8 @@
   text-align: center;
   display: block;
   margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   width: 284px;
 

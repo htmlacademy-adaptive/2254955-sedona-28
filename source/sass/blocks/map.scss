@@ -17,15 +17,7 @@
   display: block;
   border: none;
   width: 100%;
-  min-height: 350px;
-
-  @media (min-width: variables.$tablet-width) {
-    height: 100%;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    height: 100%;
-  }
+  max-height: 350px;
 
   &:focus {
     @include mixins.focus(#000000);
