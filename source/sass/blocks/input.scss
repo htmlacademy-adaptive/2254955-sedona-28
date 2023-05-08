@@ -2,7 +2,7 @@
 @use "../variables";
 
 .input {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 
   &:last-child {
     margin-bottom: 0;
@@ -13,6 +13,7 @@
   @include mixins.text--normal(14px, variables.$text-color-secondary);
   text-transform: uppercase;
   display: block;
+  padding: 0 14px;
 }
 
 .input__wrapper {
@@ -23,7 +24,7 @@
   @include mixins.text--bold(18px, variables.$text-color-primary);
   border: none;
   background: #f2f2f2;
-  padding: 16px;
+  padding: 16px 14px;
   width: 100%;
 
   &:hover {
@@ -47,15 +48,15 @@
 }
 
 .input__edit--icon {
-  padding: 16px 74px 16px 16px;
+  padding: 16px 74px 16px 14px;
 }
 
 .input__icon-wrapper {
-  width: 56px;
-  height: 54px;
+  width: 58px;
+  height: 58px;
   position: absolute;
-  right: 2px;
-  top: 2px;
+  right: 0;
+  top: 0;
   background-color: #e6e6e6;
   display: flex;
   justify-content: center;

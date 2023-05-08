@@ -57,8 +57,8 @@
               <p class="review__subtitle review__subtitle--desktop">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br>а также о посещенных вами достопримечательностях</p>
             </header>
             <form class="review__form form" action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset class="form__fieldset fieldset">
-                <span class="fieldset__title-wrapper">
+              <fieldset class="form__fieldset form__fieldset--fio fieldset">
+                <span class="fieldset__title-wrapper fieldset__title-wrapper--fio">
                   <legend class="fieldset__title">Представьтесь:</legend>
                 </span>
                 <div class="fieldset__input input">
@@ -74,8 +74,8 @@
                   <input class="input__edit" type="text" name="middlename" id="middlename" value="Викторович" placeholder="Введите отчество" required>
                 </div>
               </fieldset>
-              <fieldset class="form__fieldset fieldset">
-                <span class="fieldset__title-wrapper">
+              <fieldset class="form__fieldset form__fieldset--contacts fieldset">
+                <span class="fieldset__title-wrapper fieldset__title-wrapper--contacts">
                   <legend class="fieldset__title">Контактная информация:</legend>
                 </span>
                 <div class="fieldset__input input">
@@ -93,24 +93,24 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="form__fieldset fieldset">
+              <fieldset class="form__fieldset form__fieldset--impression fieldset">
                 <span class="fieldset__title-wrapper fieldset__title-wrapper--decorated">
                   <legend class="fieldset__title">Ваше общее впечатление:</legend>
                 </span>
                 <ul class="fieldset__list fieldset__list--radio">
-                  <li class="fieldset__item">
+                  <li class="fieldset__item fieldset__item--radio">
                     <label class="radio">
                       <input class="radio__input" type="radio" name="impression" value="positive" checked>
                       <span class="radio__name">Скорее положительное</span>
                     </label>
                   </li>
-                  <li class="fieldset__item">
+                  <li class="fieldset__item fieldset__item--radio">
                     <label class="radio">
                       <input class="radio__input" type="radio" name="impression" value="negative">
                       <span class="radio__name">Скорее отрицательное</span>
                     </label>
                   </li>
-                  <li class="fieldset__item">
+                  <li class="fieldset__item fieldset__item--radio">
                     <label class="radio">
                       <input class="radio__input" type="radio" name="impression" value="unknown">
                       <span class="radio__name">Затрудняюсь ответить</span>
@@ -118,30 +118,30 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="form__fieldset fieldset">
+              <fieldset class="form__fieldset form__fieldset--places fieldset">
                 <span class="fieldset__title-wrapper fieldset__title-wrapper--decorated">
                   <legend class="fieldset__title">Посещенные<br>достопримечательности:</legend>
                 </span>
                 <ul class="fieldset__list fieldset__list--checkbox">
-                  <li class="fieldset__item">
+                  <li class="fieldset__item fieldset__item--checkbox">
                     <label class="checkbox">
                       <input class="checkbox__input" type="checkbox" name="devilBridge" checked>
                       <span class="checkbox__name">Мост дьявола</span>
                     </label>
                   </li>
-                  <li class="fieldset__item">
+                  <li class="fieldset__item fieldset__item--checkbox">
                     <label class="checkbox">
                       <input class="checkbox__input" type="checkbox" name="mountainBell" checked>
                       <span class="checkbox__name">Гора-Колокол</span>
                     </label>
                   </li>
-                  <li class="fieldset__item">
+                  <li class="fieldset__item fieldset__item--checkbox">
                     <label class="checkbox">
                       <input class="checkbox__input" type="checkbox" name="slidePark" checked>
                       <span class="checkbox__name">Слайд-парк</span>
                     </label>
                   </li>
-                  <li class="fieldset__item">
+                  <li class="fieldset__item fieldset__item--checkbox">
                     <label class="checkbox">
                       <input class="checkbox__input" type="checkbox" name="redRocks">
                       <span class="checkbox__name">Красные скалы</span>
@@ -149,7 +149,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="form__fieldset fieldset">
+              <fieldset class="form__fieldset form__fieldset--emotions fieldset">
                 <span class="fieldset__title-wrapper fieldset__title-wrapper--decorated">
                   <legend class="fieldset__title">Опишите свои эмоции:</legend>
                 </span>
@@ -157,7 +157,7 @@
                 <textarea class="fieldset__textarea" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
               <div class="form__button-wrapper">
-                <button class="form__button" type="submit">Отправить отзыв</button>
+                <button class="form__button form__button--review" type="submit">Отправить отзыв</button>
                 <small class="form__hint"><sup>*</sup> — обязательные поля</small>
               </div>
             </form>

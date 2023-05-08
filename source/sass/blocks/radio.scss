@@ -24,7 +24,7 @@
 
 .radio__name {
   @include mixins.text--bold(18px, variables.$text-color-primary);
-  padding: 10px 10px 10px 62px;
+  padding: 10px 10px 13px 60px;
   display: block;
   position: relative;
 }

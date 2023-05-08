@@ -17,6 +17,26 @@
   }
 }
 
+.fieldset__title-wrapper--fio {
+  @media (max-width: variables.$mobile-width-only) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.fieldset__title-wrapper--contacts {
+  @media (max-width: variables.$mobile-width-only) {
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 23px;
+  }
+}
+
 .fieldset__title-wrapper--decorated {
   @media (min-width: variables.$tablet-width) {
     display: grid;
@@ -74,6 +94,7 @@
   text-align: center;
 
   @media (min-width: variables.$tablet-width) {
+    @include mixins.text--bold(21px, variables.$text-color-primary);
     grid-column: 2/3;
   }
 
@@ -99,6 +120,8 @@
 
 .fieldset__list--radio {
   @media (min-width: variables.$tablet-width) {
+    margin-left: 36px;
+    margin-right: 36px;
     column-gap: 16px;
   }
 
@@ -110,6 +133,8 @@
 
 .fieldset__list--checkbox {
   @media (min-width: variables.$tablet-width) {
+    margin-left: 82px;
+    margin-right: 82px;
     column-gap: 32px;
   }
 
@@ -120,11 +145,17 @@
 }
 
 .fieldset__item {
-  margin-bottom: 16px;
-
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.fieldset__item--radio {
+  margin-bottom: 14px;
+}
+
+.fieldset__item--checkbox {
+  margin-bottom: 16px;
 }
 
 .fieldset__textarea {
