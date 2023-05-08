@@ -8,6 +8,7 @@
   background-color: #ddebf4;
   background-image: url("../img/backgrounds/divider-mobile.svg"), url("../img/backgrounds/background-index-mobile.webp");
   padding: 90px 19px 85px 19px;
+  max-height: 389px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/backgrounds/divider-mobile.svg"), url("../img/backgrounds/background-index-mobile@2x.webp");
