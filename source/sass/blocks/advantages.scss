@@ -188,7 +188,7 @@
 
   @media (min-width: variables.$desktop-width) {
     @include mixins.text--normal(14px, variables.$text-color-alternate);
-    margin-bottom: 23px
+    margin-bottom: 23px;
   }
 }
 

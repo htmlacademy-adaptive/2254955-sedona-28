@@ -41,6 +41,7 @@
 .checkbox__input:focus ~ .checkbox__name::before {
   @include mixins.focus(#000000);
 }
+
 .checkbox__input:focus-visible ~ .checkbox__name::before {
   @include mixins.focus(#000000);
 }
@@ -89,6 +90,6 @@
   background-repeat: no-repeat;
 }
 
-checkbox:active .checkbox__name::after {
+.checkbox:active .checkbox__name::after {
   background-color: rgba(51, 51, 51, 0.3);
 }
