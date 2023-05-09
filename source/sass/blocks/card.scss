@@ -121,14 +121,6 @@
       @include mixins.focus(#FFFFFF);
     }
   }
-
-  &:focus-visible {
-    @include mixins.focus(#000000);
-
-    @media (min-width: variables.$desktop-width) {
-      @include mixins.focus(#FFFFFF);
-    }
-  }
 }
 
 .card__like-wrapper::before {

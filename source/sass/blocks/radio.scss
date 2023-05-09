@@ -25,10 +25,6 @@
   @include mixins.focus(#000000);
 }
 
-.radio__input:focus-visible ~ .radio__name::before {
-  @include mixins.focus(#000000);
-}
-
 .radio__name {
   @include mixins.text--bold(18px, variables.$text-color-primary);
   padding: 10px 10px 13px 62px;

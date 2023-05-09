@@ -217,10 +217,6 @@
   &:focus {
     @include mixins.focus(#000000);
   }
-
-  &:focus-visible {
-    @include mixins.focus(#000000);
-  }
 }
 
 .main-nav__item--current {

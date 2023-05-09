@@ -126,10 +126,6 @@
   &:focus {
     @include mixins.focus(#000000);
   }
-
-  &:focus-visible {
-    @include mixins.focus(#000000);
-  }
 }
 
 .form__button--review {

@@ -101,10 +101,6 @@
   &:focus {
     @include mixins.focus(#ffffff);
   }
-
-  &:focus-visible {
-    @include mixins.focus(#ffffff);
-  }
 }
 
 .video__button svg {

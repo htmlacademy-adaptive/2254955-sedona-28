@@ -196,10 +196,6 @@
     @include mixins.focus(#000000);
   }
 
-  &:focus-visible {
-    @include mixins.focus(#000000);
-  }
-
   @media (min-width: variables.$desktop-width) {
     margin-left: 96px;
     margin-right: 96px;

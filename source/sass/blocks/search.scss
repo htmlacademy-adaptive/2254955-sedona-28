@@ -75,10 +75,6 @@
   &:focus {
     @include mixins.focus(#000000);
   }
-
-  &:focus-visible {
-    @include mixins.focus(#000000);
-  }
 }
 
 .search__link--disable {
