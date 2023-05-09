@@ -135,24 +135,24 @@
 
 .modal__button--failure {
   @media (max-width: variables.$mobile-width-only) {
-    min-width: 180px;
+    width: 180px;
     margin: 0 auto 35px auto;
   }
 
   @media (min-width: variables.$tablet-width) {
-    min-width: 272px;
+    width: 272px;
     margin: 0 auto 49px auto;
   }
 }
 
 .modal__button--success {
   @media (max-width: variables.$mobile-width-only) {
-    min-width: 280px;
+    width: 280px;
     margin: 0 auto 20px auto;
   }
 
   @media (min-width: variables.$tablet-width) {
-    min-width: 458px;
+    width: 458px;
     margin: 0 auto;
   }
 }

@@ -34,6 +34,10 @@
   background-position-y: 0;
   background-size: 40px 40px;
 
+  @media (max-width: variables.$mobile-width-only) {
+    min-width: 284px;
+  }
+
   @media (min-width: variables.$tablet-width) {
     width: 33%;
     min-height: 331px;
