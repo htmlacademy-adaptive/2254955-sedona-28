@@ -11,7 +11,7 @@
   @media (min-width: variables.$tablet-width) {
     min-width: 445px;
     max-width: 560px;
-    padding: 62px 0 70px 0;
+    padding: 65px 0 82px 0;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -26,11 +26,11 @@
   text-align: center;
 
   @include mixins.text--bold(18px, variables.$text-color-primary);
-  margin-bottom: 36px;
+  margin-bottom: 27px;
 
   @media (min-width: variables.$tablet-width) {
     @include mixins.text--bold(30px, variables.$text-color-primary);
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -55,6 +55,19 @@
   }
 }
 
+.video__video-wrapper {
+  position: relative;
+
+
+  @media (max-width: variables.$mobile-width-only) {
+    margin-bottom: -3px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
 .video__image {
   object-fit: cover;
   margin: 0 20px;
@@ -64,12 +77,91 @@
   @media (min-width: variables.$tablet-width) {
     margin: 0 60px;
     width: calc(100% - 120px);
-    max-height: 683px;
   }
 
   @media (min-width: variables.$desktop-width) {
     margin: 0 200px;
     width: calc(100% - 400px);
-    min-height: 681px;
+  }
+}
+
+.video__button {
+  width: 48px;
+  height: 54px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  z-index: 2;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:focus {
+    @include mixins.focus(#ffffff);
+  }
+}
+
+.video__button svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.video__button path {
+  fill: #ffffff;
+  fill-opacity: 0.7;
+}
+
+.video__button:hover path {
+  fill: #ffffff;
+  fill-opacity: 0.5;
+}
+
+.video__button:active path {
+  fill: #ffffff;
+  fill-opacity: 0.3;
+}
+
+.video__description--mobile {
+  @media (max-width: variables.$mobile-width-only) {
+    display: block;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
+}
+
+.video__description--tablet {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
+}
+
+.video__description--desktop {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: block;
   }
 }

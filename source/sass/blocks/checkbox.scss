@@ -8,10 +8,38 @@
   cursor: pointer;
 }
 
+.checkbox--bridge {
+  @media (min-width: variables.$desktop-width) {
+    min-width: 172px;
+  }
+}
+
+.checkbox--mountain {
+  @media (min-width: variables.$desktop-width) {
+    min-width: 170px;
+  }
+}
+
+.checkbox--park {
+  @media (min-width: variables.$desktop-width) {
+    min-width: 153px;
+  }
+}
+
+.checkbox--rocks {
+  @media (min-width: variables.$desktop-width) {
+    min-width: 184px;
+  }
+}
+
 .checkbox__input {
   position: absolute;
   outline: none;
   clip: rect(0, 0, 0, 0);
+}
+
+.checkbox__input:focus ~ .checkbox__name::before {
+  @include mixins.focus(#000000);
 }
 
 .checkbox__name {
@@ -19,6 +47,12 @@
   padding: 10px 10px 10px 62px;
   display: block;
   position: relative;
+}
+
+.checkbox__name--desktop {
+  @media (min-width: variables.$desktop-width) {
+    padding: 10px 0 10px 62px;
+  }
 }
 
 .checkbox__name::before {
@@ -31,6 +65,14 @@
   background-color: #f2f2f2;
 }
 
+.checkbox:hover .checkbox__name::before {
+  background-color: #e5e5e5;
+}
+
+.checkbox:active .checkbox__name::before {
+  background-color: #d5d5d5;
+}
+
 .checkbox__input:checked ~ .checkbox__name::after {
   position: absolute;
   content: "";
@@ -41,4 +83,8 @@
   background-image: url("../img/input/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.checkbox:active .checkbox__name::after {
+  background-color: rgba(51, 51, 51, 0.3);
 }

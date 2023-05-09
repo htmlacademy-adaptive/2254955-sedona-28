@@ -8,7 +8,7 @@
   justify-content: space-between;
   background-color: #eeeeee;
 
-  padding: 24px 18px 24px 18px;
+  padding: 24px 18px 30px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 0;
@@ -40,5 +40,33 @@
 .advantages-group__item:not(:last-child) {
   @media (max-width: variables.$mobile-width-only) {
     border-bottom: 1px solid #d6d6d6;
+  }
+}
+
+.advantages-group__item:first-child .advantages__card {
+  @media (max-width: variables.$mobile-width-only) {
+    padding: 0 18px 24px 18px;
+  }
+}
+
+.advantages-group__item:not(:first-child) .advantages__card {
+  @media (max-width: variables.$mobile-width-only) {
+    padding: 24px 18px;
+  }
+}
+
+.advantages-group__item:last-child .advantages__card {
+  @media (max-width: variables.$mobile-width-only) {
+    padding: 24px 18px 0 18px;
+  }
+}
+
+.advantages-group__item .advantages__card {
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 41px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 53px;
   }
 }

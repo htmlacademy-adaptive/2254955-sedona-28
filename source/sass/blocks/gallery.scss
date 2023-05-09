@@ -1,15 +1,25 @@
 @use "../mixins";
 @use "../variables";
 
-.gallery__header {
-  padding: 30px 20px 17px 20px;
-
+.gallery__wrapper {
   @media (min-width: variables.$tablet-width) {
-    padding: 61px 155px 62px 155px;
+    padding: 0 60px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 99px 372px 64px 370px;
+    padding: 0;
+  }
+}
+
+.gallery__header {
+  padding: 30px 20px 42px 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 61px 100px 85px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 99px 300px 88px;
   }
 }
 
@@ -19,16 +29,16 @@
   text-align: center;
 
   @include mixins.text--bold(21px, variables.$text-color-primary);
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   @media (min-width: variables.$tablet-width) {
     @include mixins.text--bold(30px, variables.$text-color-primary);
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: variables.$desktop-width) {
     @include mixins.text--bold(30px, variables.$text-color-primary);
-    margin-bottom: 37px;
+    margin-bottom: 32px;
   }
 }
 
@@ -45,5 +55,47 @@
 
   @media (min-width: variables.$desktop-width) {
     @include mixins.text--normal(14px, variables.$text-color-secondary);
+  }
+}
+
+.gallery__description--mobile {
+  @media (max-width: variables.$mobile-width-only) {
+    display: block;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
+}
+
+.gallery__description--tablet {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
+}
+
+.gallery__description--desktop {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: block;
   }
 }

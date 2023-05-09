@@ -6,6 +6,13 @@
   display: block;
   min-height: 46px;
   cursor: pointer;
+  min-width: 280px;
+}
+
+.radio--short {
+  @media (min-width: variables.$desktop-width) {
+    min-width: 236px;
+  }
 }
 
 .radio__input {
@@ -14,11 +21,19 @@
   clip: rect(0, 0, 0, 0);
 }
 
+.radio__input:focus ~ .radio__name::before {
+  @include mixins.focus(#000000);
+}
+
 .radio__name {
   @include mixins.text--bold(18px, variables.$text-color-primary);
-  padding: 10px 10px 10px 62px;
+  padding: 10px 10px 13px 62px;
   display: block;
   position: relative;
+}
+
+.radio__name--short {
+  padding: 10px 0 13px 62px;
 }
 
 .radio__name::before {
@@ -32,6 +47,14 @@
   border-radius: 50%;
 }
 
+.radio:hover .radio__name::before {
+  background-color: #e5e5e5;
+}
+
+.radio:active .radio__name::before {
+  background-color: #d5d5d5;
+}
+
 .radio__input:checked ~ .radio__name::after {
   position: absolute;
   content: "";
@@ -41,4 +64,8 @@
   height: 16px;
   background-color: #333333;
   border-radius: 50%;
+}
+
+.radio:active .radio__name::after {
+  background-color: rgba(51, 51, 51, 0.3);
 }

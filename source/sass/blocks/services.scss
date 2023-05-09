@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  justify-content: center;
+  justify-content: left;
   padding: 23px 18px 46px 18px;
   gap: 25px;
 
@@ -24,9 +24,7 @@
 }
 
 .services__item {
-  min-width: 284px;
   max-width: 400px;
-  min-height: 113px;
 
   padding: 0 0 0 47px;
 
@@ -36,10 +34,13 @@
   background-position-y: 0;
   background-size: 40px 40px;
 
+  @media (max-width: variables.$mobile-width-only) {
+    min-width: 284px;
+  }
+
   @media (min-width: variables.$tablet-width) {
     width: 33%;
     min-height: 331px;
-    padding: 158px 33px 60px 33px;
     background-position-x: center;
     background-position-y: 59px;
     background-size: 77px 72px;
@@ -49,7 +50,6 @@
     width: 33%;
     min-height: 330px;
 
-    padding: 169px 50px 69px 50px;
     background-position-x: center;
     background-position-y: 69px;
     background-size: 80px 73px;
@@ -58,14 +58,50 @@
 
 .services__item--home {
   background-image: url("../img/services/house.svg");
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 158px 33px 60px 33px;
+    background-position-y: 60px;
+    background-size: 77px 72px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 170px 33px 60px;
+    background-position-y: 69px;
+    background-size: 77px 72px;
+  }
 }
 
 .services__item--food {
   background-image: url("../img/services/food.svg");
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 156px 33px 61px 33px;
+    background-position-y: 59px;
+    background-size: 79px 72px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 168px 33px 61px;
+    background-position-y: 72px;
+    background-size: 74px 69px;
+  }
 }
 
 .services__item--presents {
   background-image: url("../img/services/gift.svg");
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 153px 33px 64px 33px;
+    background-position-y: 64px;
+    background-size: 67px 75px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 171px 33px 64px;
+    background-position-y: 69px;
+    background-size: 77px 75px;
+  }
 }
 
 .services__title {
@@ -78,12 +114,14 @@
   text-align: left;
 
   @media (min-width: variables.$tablet-width) {
+    @include mixins.text--bold(21px, variables.$text-color-primary);
     margin-top: 0;
-    margin-bottom: 29px;
+    margin-bottom: 22px;
     text-align: center;
   }
 
   @media (min-width: variables.$desktop-width) {
+    @include mixins.text--bold(21px, variables.$text-color-primary);
     margin-top: 0;
     text-align: center;
   }
@@ -101,5 +139,47 @@
 
   @media (min-width: variables.$desktop-width) {
     text-align: center;
+  }
+}
+
+.services__description--mobile {
+  @media (max-width: variables.$mobile-width-only) {
+    display: block;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
+}
+
+.services__description--tablet {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
+}
+
+.services__description--desktop {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: block;
   }
 }

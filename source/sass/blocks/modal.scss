@@ -17,31 +17,88 @@
 
   @media (max-width: variables.$mobile-width-only) {
     margin-top: 116px;
+    min-height: 280px;
   }
 
   @media (min-width: variables.$tablet-width) {
     width: 400px;
     margin: 283px auto;
+    min-height: 347px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 640px;
+
     margin: 162px auto;
   }
 }
 
-.modal__content-wrapper {
-  padding: 45px 42px 28px 41px;
+.modal__wrapper--success {
+  @media (min-width: variables.$tablet-width) {
+    min-width: 640px;
+  }
+}
+
+.modal__content-wrapper--failure {
+  @media (max-width: variables.$mobile-width-only) {
+    padding: 45px 42px 7px 41px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 48px 42px 47px 41px;
+  }
+}
+
+.modal__content-wrapper--success {
+  @media (max-width: variables.$mobile-width-only) {
+    padding: 40px 42px 51px 41px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 43px 42px 51px 41px;
+  }
 }
 
 .modal__title {
   @include mixins.reset-header-paragraph;
-  @include mixins.text--bold(21px, variables.$text-color-primary);
-
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 32px;
+
+  @media (max-width: variables.$mobile-width-only) {
+    @include mixins.text--bold(18px, variables.$text-color-primary);
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.text--bold(30px, variables.$text-color-primary);
+    line-height: 40px;
+  }
 }
+
+.modal__title br {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+}
+
+.modal__title--failure {
+  @media (max-width: variables.$mobile-width-only) {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.modal__title--success {
+  @media (max-width: variables.$mobile-width-only) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
 
 .modal__message {
   @include mixins.reset-header-paragraph;
@@ -52,11 +109,17 @@
 }
 
 .modal__button-wrapper {
-  padding: 20px;
+  @media (max-width: variables.$mobile-width-only) {
+    padding: 20px 0 20px;
+  }
 }
 
 .modal__button-wrapper--success {
   background-color: #f2f2f2;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 44px 0;
+  }
 }
 
 .modal__button {
@@ -64,18 +127,74 @@
   border: none;
   padding: 18px 20px 14px 20px;
   display: block;
-  min-width: 180px;
-  max-width: 280px;
 
   @media (max-width: variables.$mobile-width-only) {
+    font-size: 18px;
+  }
+}
+
+.modal__button--failure {
+  @media (max-width: variables.$mobile-width-only) {
+    width: 180px;
     margin: 0 auto 35px auto;
   }
 
   @media (min-width: variables.$tablet-width) {
+    width: 272px;
+    margin: 0 auto 49px auto;
+  }
+}
+
+.modal__button--success {
+  @media (max-width: variables.$mobile-width-only) {
+    width: 280px;
     margin: 0 auto 20px auto;
   }
 
+  @media (min-width: variables.$tablet-width) {
+    width: 458px;
+    margin: 0 auto;
+  }
+}
+
+.modal__message--mobile {
+  @media (max-width: variables.$mobile-width-only) {
+    display: block;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
   @media (min-width: variables.$desktop-width) {
-    margin: 0 auto 20px auto;
+    display: none;
+  }
+}
+
+.modal__message--tablet {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
+}
+
+.modal__message--desktop {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: block;
   }
 }
