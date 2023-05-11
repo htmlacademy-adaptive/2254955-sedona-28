@@ -126,15 +126,13 @@
   display: inline-block;
   content: "";
   mask-image: url("../img/sprite.svg#like");
-  background-color: #000000;
-  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0.3);
   width: 23px;
   height: 21px;
   margin-right: 10px;
 
   @media (min-width: variables.$desktop-width) {
     background-color: #ffffff;
-    opacity: 1;
   }
 }
 
