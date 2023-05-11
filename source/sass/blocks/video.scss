@@ -6,17 +6,18 @@
 
   min-width: 266px;
   max-width: 360px;
-  padding: 17px 26px 38px 28px;
+  padding: 17px 26px 36px 28px;
 
   @media (min-width: variables.$tablet-width) {
     min-width: 445px;
     max-width: 560px;
-    padding: 65px 0 82px 0;
+    padding: 59px 55px 82px;
   }
 
   @media (min-width: variables.$desktop-width) {
     min-width: 445px;
     max-width: 560px;
+    padding: 65px 55px 82px;
   }
 }
 
@@ -52,7 +53,11 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 78px;
   }
 }
 

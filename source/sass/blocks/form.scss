@@ -13,7 +13,7 @@
 
 .form__fieldset--fio {
   @media (max-width: variables.$mobile-width-only) {
-    padding: 24px 20px 39px;
+    padding: 24px 20px 38px;
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -48,7 +48,7 @@
 
 .form__fieldset--impression {
   @media (max-width: variables.$mobile-width-only) {
-    padding: 25px 20px 20px;
+    padding: 25px 20px 18px;
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -63,7 +63,7 @@
 
 .form__fieldset--places {
   @media (max-width: variables.$mobile-width-only) {
-    padding: 23px 18px 25px;
+    padding: 25px 19px 23px;
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -81,7 +81,7 @@
   border-bottom: none;
 
   @media (max-width: variables.$mobile-width-only) {
-    padding: 24px 20px 42px;
+    padding: 24px 20px 50px;
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -101,7 +101,7 @@
   flex-direction: column;
 
   @media (min-width: variables.$tablet-width) {
-    margin-top: 13px;
+    margin-top: 11px;
     margin-bottom: 65px;
     padding: 0;
 
@@ -114,7 +114,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin: 6px 96px 63px;
+    margin: 3px 96px 63px;
     max-width: 768px;
   }
 }

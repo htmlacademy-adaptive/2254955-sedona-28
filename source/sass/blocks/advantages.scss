@@ -2,7 +2,7 @@
 @use "../variables";
 
 .advantages__header {
-  padding: 33px 18px 14px 18px;
+  padding: 33px 25px 14px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 47px 124px 56px 124px;
@@ -96,7 +96,7 @@
 }
 
 .advantages__card {
-  padding: 37px 18px;
+  padding: 37px 25px;
 
   @media (max-width: variables.$mobile-width-only) {
     margin: 0 auto;
@@ -104,13 +104,71 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    padding: 52px 20px 31px;
+    padding: 41px 20px 31px;
     width: 256px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 52px 50px 51px 50px;
+    padding: 52px 55px 51px;
     width: 400px;
+  }
+}
+
+.advantages__card--thin {
+  @media (max-width: variables.$mobile-width-only) {
+    padding: 37px 32px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 53px 30px 32px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 37px 70px;
+  }
+}
+
+.advantages__card--city {
+  @media (min-width: variables.$tablet-width) {
+    padding: 52px 20px 31px;
+  }
+}
+
+.advantages__card--square {
+  @media (max-width: variables.$mobile-width-only) {
+    padding: 26px 32px 22px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 57px 55px 51px;
+  }
+}
+
+.advantages__card--road {
+  @media (max-width: variables.$mobile-width-only) {
+    padding: 26px 32px 22px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 41px 30px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 57px 30px;
+  }
+}
+
+.advantages__card--tourist {
+  @media (max-width: variables.$mobile-width-only) {
+    padding: 25px 32px 29px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 41px 30px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 57px 30px;
   }
 }
 
@@ -195,6 +253,32 @@
   color: variables.$text-color-secondary;
   text-transform: uppercase;
   text-align: center;
+}
+
+.advantages__text--bridge br {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: block;
+  }
+}
+
+.advantages__text--road br {
+
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .advantages__text--photo {

@@ -45,6 +45,16 @@
   text-align: center;
 }
 
+.search__description br {
+  @media (max-width: variables.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+  }
+}
+
 .search__button-wrapper {
   padding: 0 18px;
 
