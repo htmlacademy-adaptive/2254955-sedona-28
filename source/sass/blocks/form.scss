@@ -145,13 +145,14 @@
   text-transform: uppercase;
   text-align: right;
   padding: 17px 0 3px 3px;
+  color: rgba(51, 51, 51, 0.6);
+  font-size: 12px;
 
   @media (max-width: variables.$mobile-width-only) {
-    @include mixins.text--normal(12px, rgba(51, 51, 51, 0.6));
     padding: 0;
   }
 
   @media (min-width: variables.$tablet-width) {
-    @include mixins.text--normal(14px, rgba(51, 51, 51, 0.6));
+    font-size: 14px;
   }
 }

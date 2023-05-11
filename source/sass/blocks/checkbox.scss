@@ -6,6 +6,9 @@
   display: block;
   min-height: 46px;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .checkbox--bridge {
@@ -43,7 +46,6 @@
 }
 
 .checkbox__name {
-  @include mixins.text--bold(18px, variables.$text-color-primary);
   padding: 10px 10px 10px 62px;
   display: block;
   position: relative;

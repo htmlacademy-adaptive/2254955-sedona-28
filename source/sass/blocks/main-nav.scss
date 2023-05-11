@@ -2,7 +2,9 @@
 @use "../variables";
 
 .main-nav {
+  font-weight: 700;
   min-height: 56px;
+  z-index: 2;
 }
 
 .main-nav--closed .main-nav__list {
@@ -22,10 +24,6 @@
     background-color: #81b3d2;
     box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
   }
-}
-
-.main-nav--opened {
-  z-index: 2;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -113,23 +111,16 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    justify-content: space-between;
-    padding: 10px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    justify-content: space-between;
     padding: 10px;
   }
 }
 
 .main-nav__item {
-  @include mixins.text--bold(14px, variables.$text-color-primary);
   text-transform: uppercase;
   text-align: center;
 
   @media (max-width: variables.$mobile-width-only) {
-    @include mixins.text--bold(18px, variables.$text-color-alternate);
+    color: variables.$text-color-alternate;
     min-height: 55px;
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
@@ -157,18 +148,10 @@
   @media (min-width: variables.$tablet-width) {
     width: 20%;
   }
-
-  @media (min-width: variables.$desktop-width) {
-    width: 20%;
-  }
 }
 
 .main-nav__item:nth-child(4n+3) {
   @media (min-width: variables.$tablet-width) {
-    margin: 0 0 0 20%;
-  }
-
-  @media (min-width: variables.$desktop-width) {
     margin: 0 0 0 20%;
   }
 }
@@ -180,6 +163,8 @@
   width: auto;
 
   @media (max-width: variables.$mobile-width-only) {
+    line-height: 26px;
+    font-size: 18px;
     background-color: #81b3d2;
     padding: 17px 70px 12px 70px;
   }
@@ -224,6 +209,6 @@
   pointer-events: none;
 
   @media (max-width: variables.$mobile-width-only) {
-    @include mixins.text--bold(18px, variables.$text-color-alternate);
+    color: variables.$text-color-alternate;
   }
 }

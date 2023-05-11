@@ -17,6 +17,7 @@
   line-height: 26px;
   color: #ffffff;
   background-color: #81b3d2;
+  cursor: pointer;
 
   text-transform: uppercase;
 
@@ -30,24 +31,6 @@
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
   }
-}
-
-@mixin text--bold($size, $color) {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: $size;
-  line-height: 26px;
-  color: $color;
-}
-
-@mixin text--normal($size, $color) {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: $size;
-  line-height: 21px;
-  color: $color;
 }
 
 @mixin focus($color) {

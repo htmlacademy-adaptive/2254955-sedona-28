@@ -1,6 +1,10 @@
 @use "../mixins";
 @use "../variables";
 
+.search {
+  color: variables.$text-color-secondary;
+}
+
 .search__wrapper {
   padding: 38px 29px 0 29px;
   margin-bottom: 31px;
@@ -18,25 +22,25 @@
 
 .search__title {
   @include mixins.reset-header-paragraph;
-  @include mixins.text--bold(21px, variables.$text-color-primary);
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 21px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 22px;
 
   @media (min-width: variables.$tablet-width) {
-    @include mixins.text--bold(30px, variables.$text-color-primary);
+    font-size: 30px;
     margin-bottom: 32px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    @include mixins.text--bold(30px, variables.$text-color-primary);
     margin-bottom: 36px;
   }
 }
 
 .search__description {
   @include mixins.reset-header-paragraph;
-  @include mixins.text--normal(14px, variables.$text-color-secondary);
   text-transform: uppercase;
   text-align: center;
 }
@@ -80,46 +84,4 @@
 .search__link--disable {
   background-color: #e5e5e5;
   pointer-events: none;
-}
-
-.search__description--mobile {
-  @media (max-width: variables.$mobile-width-only) {
-    display: block;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    display: none;
-  }
-}
-
-.search__description--tablet {
-  @media (max-width: variables.$mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    display: none;
-  }
-}
-
-.search__description--desktop {
-  @media (max-width: variables.$mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    display: block;
-  }
 }
