@@ -34,7 +34,7 @@
   object-fit: cover;
 
   @media (max-width: variables.$mobile-width-only) {
-    margin: 0 20px 14px 20px;
+    margin: 0 20px 17px;
     width: calc(100% - 40px);
     min-height: 280px;
   }
@@ -54,7 +54,7 @@
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;
-    padding: 19px 20px 11px;
+    padding: 21px 20px 16px;
     width: 100%;
     background-color: #f2f2f2;
     display: flex;
@@ -62,11 +62,18 @@
   }
 
   @media (min-width: variables.$desktop-width) {
+    padding: 18px 15px 17px 25px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     min-height: 80px;
     bottom: 0;
+  }
+}
+
+.card__details--full {
+  @media (min-width: variables.$desktop-width) {
+    padding: 22px 15px 17px 21px;
   }
 }
 
@@ -91,8 +98,18 @@
   display: block;
   color: variables.$text-color-secondary;
 
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 3px;
+  }
+
   @media (min-width: variables.$desktop-width) {
     color: variables.$text-color-alternate;
+  }
+}
+
+.card__description--full {
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 1px;
   }
 }
 
@@ -101,7 +118,7 @@
   text-decoration: none;
 
   @media (max-width: variables.$mobile-width-only) {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -133,7 +150,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   width: 23px;
   height: 21px;
-  margin-right: 10px;
+  margin-right: 13px;
 
   @media (min-width: variables.$desktop-width) {
     background-color: #ffffff;
