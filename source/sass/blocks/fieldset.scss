@@ -150,14 +150,11 @@
 
 .fieldset__list--checkbox {
   @media (min-width: variables.$tablet-width) {
-    margin-left: 83px;
-    margin-right: 83px;
+    margin: 0 auto;
     column-gap: 32px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-left: 44px;
-    margin-right: 44px;
     column-gap: 64px;
     grid-template-columns: repeat(4, 1fr);
   }
