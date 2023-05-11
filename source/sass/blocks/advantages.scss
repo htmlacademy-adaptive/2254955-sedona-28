@@ -14,18 +14,15 @@
 }
 
 .advantages__title {
-  @include mixins.text--bold(18px, variables.$text-color-primary);
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 18px;
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 38px;
 
   @media (min-width: variables.$tablet-width) {
-    @include mixins.text--bold(21px, variables.$text-color-primary);
-    margin: 0 0 30px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    @include mixins.text--bold(21px, variables.$text-color-primary);
+    font-size: 21px;
     margin: 0 0 30px;
   }
 }
@@ -37,7 +34,7 @@
 }
 
 .advantages__description {
-  @include mixins.text--normal(14px, variables.$text-color-secondary);
+  color: variables.$text-color-secondary;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
@@ -45,9 +42,9 @@
 
 .advantages__list {
   @include mixins.reset-list;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   align-content: center;
-  grid-template-rows: repeat(4, min-content);
 }
 
 .advantages__item {
@@ -88,25 +85,32 @@
   }
 }
 
+.advantages__item--text {
+  background-color: #eeeeee;
+}
+
+.advantages__item--text:not(:last-child) {
+  @media (max-width: variables.$mobile-width-only) {
+    border-bottom: 1px solid #d6d6d6;
+  }
+}
+
 .advantages__card {
   padding: 37px 18px;
-  min-width: 284px;
-  max-width: 400px;
 
   @media (max-width: variables.$mobile-width-only) {
     margin: 0 auto;
+    width: 320px;
   }
 
   @media (min-width: variables.$tablet-width) {
     padding: 52px 20px 31px;
-    min-width: 256px;
-    max-width: 400px;
+    width: 256px;
   }
 
   @media (min-width: variables.$desktop-width) {
     padding: 52px 50px 51px 50px;
-    min-width: 256px;
-    max-width: 400px;
+    width: 400px;
   }
 }
 
@@ -114,17 +118,17 @@
   @include mixins.reset-header-paragraph;
   text-transform: uppercase;
   text-align: center;
+  line-height: 26px;
+  font-size: 18px;
 
-  @include mixins.text--bold(18px, variables.$text-color-primary);
   margin-bottom: 11px;
 
   @media (min-width: variables.$tablet-width) {
-    @include mixins.text--bold(21px, variables.$text-color-primary);
+    font-size: 21px;
     margin-bottom: 14px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    @include mixins.text--bold(21px, variables.$text-color-primary);
     margin-bottom: 13px;
   }
 }
@@ -140,16 +144,14 @@
   text-transform: uppercase;
   text-align: center;
 
-  @include mixins.text--bold(18px, variables.$text-color-alternate);
+  color: variables.$text-color-alternate;
   margin-bottom: 11px;
 
   @media (min-width: variables.$tablet-width) {
-    @include mixins.text--bold(21px, variables.$text-color-alternate);
     margin-bottom: 14px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    @include mixins.text--bold(21px, variables.$text-color-alternate);
     margin-bottom: 15px;
   }
 }
@@ -158,17 +160,15 @@
   @include mixins.reset-header-paragraph;
   text-transform: uppercase;
   text-align: center;
+  color: variables.$text-color-secondary;
 
-  @include mixins.text--normal(14px, variables.$text-color-secondary);
   margin-bottom: 17px;
 
   @media (min-width: variables.$tablet-width) {
-    @include mixins.text--normal(14px, variables.$text-color-secondary);
     margin-bottom: 23px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    @include mixins.text--normal(14px, variables.$text-color-secondary);
     margin-bottom: 23px;
   }
 }
@@ -177,74 +177,36 @@
   @include mixins.reset-header-paragraph;
   text-transform: uppercase;
   text-align: center;
+  color: variables.$text-color-alternate;
 
-  @include mixins.text--normal(14px, variables.$text-color-alternate);
   margin-bottom: 17px;
 
   @media (min-width: variables.$tablet-width) {
-    @include mixins.text--normal(14px, variables.$text-color-alternate);
     margin-bottom: 23px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    @include mixins.text--normal(14px, variables.$text-color-alternate);
     margin-bottom: 23px;
   }
 }
 
 .advantages__text {
-  @include mixins.text--normal(14px, variables.$text-color-secondary);
+  color: variables.$text-color-secondary;
   @include mixins.reset-header-paragraph;
   text-transform: uppercase;
   text-align: center;
 }
 
 .advantages__text--photo {
-  @include mixins.text--normal(14px, variables.$text-color-alternate);
+  color: variables.$text-color-alternate;
   @include mixins.reset-header-paragraph;
   text-transform: uppercase;
   text-align: center;
 }
 
-.advantages__text--mobile {
-  @media (max-width: variables.$mobile-width-only) {
-    display: block;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    display: none;
-  }
-
+.advantages__photo-wrapper {
   @media (min-width: variables.$desktop-width) {
-    display: none;
-  }
-}
-
-.advantages__text--tablet {
-  @media (max-width: variables.$mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    display: none;
-  }
-}
-
-.advantages__text--desktop {
-  @media (max-width: variables.$mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    display: block;
+    min-width: 800px;
   }
 }
 

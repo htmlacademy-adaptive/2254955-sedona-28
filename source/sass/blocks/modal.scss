@@ -62,14 +62,11 @@
   @include mixins.reset-header-paragraph;
   text-transform: uppercase;
   text-align: center;
-
-  @media (max-width: variables.$mobile-width-only) {
-    @include mixins.text--bold(18px, variables.$text-color-primary);
-  }
+  font-size: 18px;
+  font-weight: 700;
 
   @media (min-width: variables.$tablet-width) {
-    @include mixins.text--bold(30px, variables.$text-color-primary);
-    line-height: 40px;
+    font-size: 30px;
   }
 }
 
@@ -80,16 +77,21 @@
 }
 
 .modal__title--failure {
+  line-height: 26px;
+
   @media (max-width: variables.$mobile-width-only) {
     margin-bottom: 26px;
   }
 
   @media (min-width: variables.$tablet-width) {
+    line-height: 40px;
     margin-bottom: 24px;
   }
 }
 
 .modal__title--success {
+  line-height: 26px;
+
   @media (max-width: variables.$mobile-width-only) {
     margin-bottom: 25px;
   }
@@ -102,7 +104,7 @@
 
 .modal__message {
   @include mixins.reset-header-paragraph;
-  @include mixins.text--normal(14px, variables.$text-color-secondary);
+  color: variables.$text-color-secondary;
 
   text-transform: uppercase;
   text-align: center;
@@ -154,47 +156,5 @@
   @media (min-width: variables.$tablet-width) {
     width: 458px;
     margin: 0 auto;
-  }
-}
-
-.modal__message--mobile {
-  @media (max-width: variables.$mobile-width-only) {
-    display: block;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    display: none;
-  }
-}
-
-.modal__message--tablet {
-  @media (max-width: variables.$mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    display: none;
-  }
-}
-
-.modal__message--desktop {
-  @media (max-width: variables.$mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    display: block;
   }
 }

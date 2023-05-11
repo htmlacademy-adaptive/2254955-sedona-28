@@ -32,24 +32,6 @@
   }
 }
 
-@mixin text--bold($size, $color) {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: $size;
-  line-height: 26px;
-  color: $color;
-}
-
-@mixin text--normal($size, $color) {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: $size;
-  line-height: 21px;
-  color: $color;
-}
-
 @mixin focus($color) {
   outline: 3px solid $color;
   border: none;

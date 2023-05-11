@@ -1,6 +1,10 @@
 @use "../mixins";
 @use "../variables";
 
+.services {
+  color: variables.$text-color-secondary;
+}
+
 .services__list {
   @include mixins.reset-list;
   display: flex;
@@ -11,44 +15,37 @@
   gap: 25px;
 
   @media (min-width: variables.$tablet-width) {
-    justify-content: space-between;
     padding: 0;
     gap: 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    justify-content: space-between;
     padding: 0;
     gap: 0;
   }
 }
 
 .services__item {
-  max-width: 400px;
-
   padding: 0 0 0 47px;
 
   background-repeat: no-repeat;
-
   background-position-x: left;
   background-position-y: 0;
   background-size: 40px 40px;
 
   @media (max-width: variables.$mobile-width-only) {
-    min-width: 284px;
+    width: 284px;
   }
 
   @media (min-width: variables.$tablet-width) {
-    width: 33%;
-    min-height: 331px;
+    width: 256px;
     background-position-x: center;
     background-position-y: 59px;
     background-size: 77px 72px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 33%;
-    min-height: 330px;
+    width: 400px;
 
     background-position-x: center;
     background-position-y: 69px;
@@ -106,7 +103,9 @@
 
 .services__title {
   @include mixins.reset-header-paragraph;
-  @include mixins.text--bold(18px, variables.$text-color-primary);
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 18px;
   text-transform: uppercase;
 
   margin-top: 8px;
@@ -114,72 +113,19 @@
   text-align: left;
 
   @media (min-width: variables.$tablet-width) {
-    @include mixins.text--bold(21px, variables.$text-color-primary);
+    font-size: 21px;
     margin-top: 0;
     margin-bottom: 22px;
-    text-align: center;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    @include mixins.text--bold(21px, variables.$text-color-primary);
-    margin-top: 0;
     text-align: center;
   }
 }
 
 .services__description {
   @include mixins.reset-header-paragraph;
-  @include mixins.text--normal(14px, variables.$text-color-secondary);
   text-transform: uppercase;
   text-align: left;
 
   @media (min-width: variables.$tablet-width) {
     text-align: center;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    text-align: center;
-  }
-}
-
-.services__description--mobile {
-  @media (max-width: variables.$mobile-width-only) {
-    display: block;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    display: none;
-  }
-}
-
-.services__description--tablet {
-  @media (max-width: variables.$mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    display: none;
-  }
-}
-
-.services__description--desktop {
-  @media (max-width: variables.$mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    display: block;
   }
 }

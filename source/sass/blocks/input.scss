@@ -10,7 +10,7 @@
 }
 
 .input__label {
-  @include mixins.text--normal(14px, variables.$text-color-secondary);
+  color: variables.$text-color-secondary;
   text-transform: uppercase;
   display: block;
   padding: 0 16px;
@@ -21,7 +21,9 @@
 }
 
 .input__edit {
-  @include mixins.text--bold(18px, variables.$text-color-primary);
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 18px;
   border: none;
   background: #f2f2f2;
   padding: 17px 15px 16px;
@@ -79,5 +81,6 @@
 }
 
 .input__edit::placeholder {
-  @include mixins.text--bold(18px, variables.$text-color-primary-opacity);
+  font-size: 18px;
+  color: variables.$text-color-primary-opacity;
 }

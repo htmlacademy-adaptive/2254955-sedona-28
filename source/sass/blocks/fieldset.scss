@@ -1,6 +1,12 @@
 @use "../mixins";
 @use "../variables";
 
+.fieldset__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
 .fieldset__title-wrapper {
   display: block;
 
@@ -101,14 +107,13 @@
 }
 
 .fieldset__title {
-  @include mixins.text--bold(18px, variables.$text-color-primary);
   text-transform: uppercase;
   text-align: center;
   padding: 0;
   margin: 0;
 
   @media (min-width: variables.$tablet-width) {
-    @include mixins.text--bold(21px, variables.$text-color-primary);
+    font-size: 21px;
     grid-column: 2/3;
   }
 
@@ -176,7 +181,10 @@
 }
 
 .fieldset__textarea {
-  @include mixins.text--bold(18px, variables.$text-color-primary-opacity);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: variables.$text-color-primary-opacity;
   background-color: #f2f2f2;
   padding: 16px;
   resize: none;

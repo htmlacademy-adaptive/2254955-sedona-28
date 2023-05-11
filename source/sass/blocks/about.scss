@@ -48,7 +48,6 @@
 }
 
 .about__title {
-  @include mixins.text--normal(14px, inherit);
   text-transform: uppercase;
   vertical-align: center;
   display: inline-block;

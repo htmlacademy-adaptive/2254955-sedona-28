@@ -73,28 +73,26 @@
 }
 
 .card__title {
+  font-weight: 700;
   @include mixins.reset-header-paragraph;
   text-transform: uppercase;
-
-  @include mixins.text--bold(14px, variables.$text-color-primary);
+  font-size: 14px;
 
   @media (min-width: variables.$desktop-width) {
-    @include mixins.text--bold(14px, variables.$text-color-alternate);
+    color: variables.$text-color-alternate;
   }
 }
 
 .card__description {
   display: block;
-
-  @include mixins.text--normal(14px, variables.$text-color-secondary);
+  color: variables.$text-color-secondary;
 
   @media (min-width: variables.$desktop-width) {
-    @include mixins.text--bold(14px, variables.$text-color-alternate);
+    color: variables.$text-color-alternate;
   }
 }
 
 .card__like-wrapper {
-
   display: block;
   text-decoration: none;
 
@@ -141,9 +139,10 @@
 }
 
 .card__like-counter {
-  @include mixins.text--bold(14px, variables.$text-color-primary);
+  font-weight: 700;
+  color: variables.$text-color-primary;
 
   @media (min-width: variables.$desktop-width) {
-    @include mixins.text--bold(14px, variables.$text-color-alternate);
+    color: variables.$text-color-alternate;
   }
 }

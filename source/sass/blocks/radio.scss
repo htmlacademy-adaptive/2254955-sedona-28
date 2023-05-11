@@ -7,6 +7,9 @@
   min-height: 46px;
   cursor: pointer;
   min-width: 280px;
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 18px;
 }
 
 .radio--short {
@@ -26,7 +29,6 @@
 }
 
 .radio__name {
-  @include mixins.text--bold(18px, variables.$text-color-primary);
   padding: 10px 10px 13px 62px;
   display: block;
   position: relative;
