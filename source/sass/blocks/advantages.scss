@@ -191,15 +191,15 @@
 }
 
 .advantages__text {
-  color: variables.$text-color-secondary;
   @include mixins.reset-header-paragraph;
+  color: variables.$text-color-secondary;
   text-transform: uppercase;
   text-align: center;
 }
 
 .advantages__text--photo {
-  color: variables.$text-color-alternate;
   @include mixins.reset-header-paragraph;
+  color: variables.$text-color-alternate;
   text-transform: uppercase;
   text-align: center;
 }

@@ -1,12 +1,6 @@
 @use "../mixins";
 @use "../variables";
 
-.fieldset__title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-}
-
 .fieldset__title-wrapper {
   display: block;
 
@@ -107,6 +101,9 @@
 }
 
 .fieldset__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
   text-transform: uppercase;
   text-align: center;
   padding: 0;
