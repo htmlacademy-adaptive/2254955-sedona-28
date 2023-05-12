@@ -92,6 +92,7 @@
 .advantages__item--text:not(:last-child) .advantages__card--text {
   @media (max-width: variables.$mobile-width-only) {
     border-bottom: 1px solid #d6d6d6;
+    margin: 0 18px;
   }
 }
 
@@ -100,17 +101,34 @@
 
   @media (max-width: variables.$mobile-width-only) {
     margin: 0 auto;
-    width: 320px;
+    min-width: 268px;
   }
 
   @media (min-width: variables.$tablet-width) {
-    padding: 41px 20px 31px;
+    padding: 41px 20px;
     width: 256px;
   }
 
   @media (min-width: variables.$desktop-width) {
+    padding: 52px 50px;
+    min-width: 400px;
+  }
+}
+
+.advantages__card--photo {
+  @media (min-width: variables.$tablet-width) {
+    padding: 52px 33px 31px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
     padding: 52px 50px 51px;
-    width: 400px;
+    min-width: 400px;
+  }
+}
+
+.advantages__card--text {
+  @media (max-width: variables.$mobile-width-only) {
+    padding: 24px 6px;
   }
 }
 
@@ -121,7 +139,7 @@
   line-height: 26px;
   font-size: 18px;
 
-  margin-bottom: 11px;
+  margin: 0 0 12px;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 21px;
@@ -197,11 +215,41 @@
   text-align: center;
 }
 
+.advantages__text--road br {
+  display: none;
+
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+  }
+}
+
+.advantages__text--road br:not(:last-child) {
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+}
+
+advantages__text--tourist br {
+  display: none;
+
+  @media (min-width: variables.$desktop-width) {
+    display: block;
+  }
+}
+
 .advantages__text--photo {
   @include mixins.reset-header-paragraph;
   color: variables.$text-color-alternate;
   text-transform: uppercase;
   text-align: center;
+}
+
+.advantages__text--photo br {
+  display: none;
+
+  @media (min-width: variables.$desktop-width) {
+    display: block;
+  }
 }
 
 .advantages__photo-wrapper {

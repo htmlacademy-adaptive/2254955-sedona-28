@@ -59,11 +59,13 @@
   background-image: url("../img/services/house.svg");
 
   @media (min-width: variables.$tablet-width) {
+    padding: 157px 33px 60px;
     background-position-y: 60px;
     background-size: 77px 72px;
   }
 
   @media (min-width: variables.$desktop-width) {
+    padding: 169px 50px 70px;
     background-position-y: 69px;
     background-size: 77px 72px;
   }
@@ -73,11 +75,13 @@
   background-image: url("../img/services/food.svg");
 
   @media (min-width: variables.$tablet-width) {
+    padding: 157px 33px 61px;
     background-position-y: 59px;
     background-size: 79px 72px;
   }
 
   @media (min-width: variables.$desktop-width) {
+    padding: 168px 50px 70px;
     background-position-y: 72px;
     background-size: 74px 69px;
   }
@@ -87,11 +91,13 @@
   background-image: url("../img/services/gift.svg");
 
   @media (min-width: variables.$tablet-width) {
+    padding: 153px 33px 64px;
     background-position-y: 64px;
     background-size: 67px 75px;
   }
 
   @media (min-width: variables.$desktop-width) {
+    padding: 171px 50px 68px;
     background-position-y: 69px;
     background-size: 77px 75px;
   }
@@ -111,7 +117,7 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 21px;
     margin-top: 0;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
     text-align: center;
   }
 }
