@@ -168,6 +168,7 @@
 }
 
 .fieldset__item {
+  min-width: 0;
   &:last-child {
     margin-bottom: 0;
   }
