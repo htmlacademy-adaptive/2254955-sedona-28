@@ -89,10 +89,15 @@
   background-color: #eeeeee;
 }
 
+.advantages__item--text .advantages__card--text {
+  @media (max-width: variables.$mobile-width-only) {
+    margin: 0 18px;
+  }
+}
+
 .advantages__item--text:not(:last-child) .advantages__card--text {
   @media (max-width: variables.$mobile-width-only) {
     border-bottom: 1px solid #d6d6d6;
-    margin: 0 18px;
   }
 }
 
@@ -101,7 +106,7 @@
 
   @media (max-width: variables.$mobile-width-only) {
     margin: 0 auto;
-    min-width: 268px;
+    min-width: 284px;
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -224,7 +229,7 @@
 }
 
 .advantages__text--road br:not(:last-child) {
-  @media (min-width: variables.$tablet-width) {
+  @media (min-width: variables.$desktop-width) {
     display: none;
   }
 }
