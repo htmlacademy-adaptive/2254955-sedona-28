@@ -109,10 +109,6 @@
     position: absolute;
     width: 100%;
   }
-
-  @media (min-width: variables.$tablet-width) {
-    padding: 10px;
-  }
 }
 
 .main-nav__item {
