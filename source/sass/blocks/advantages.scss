@@ -133,7 +133,7 @@
 
 .advantages__card--text {
   @media (max-width: variables.$mobile-width-only) {
-    padding: 24px 6px;
+    padding: 24px 18px;
   }
 }
 
@@ -234,7 +234,7 @@
   }
 }
 
-advantages__text--tourist br {
+.advantages__text--tourist br {
   display: none;
 
   @media (min-width: variables.$desktop-width) {
