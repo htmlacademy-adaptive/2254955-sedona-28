@@ -168,6 +168,7 @@
 }
 
 .fieldset__item {
+  min-width: 0;
   &:last-child {
     margin-bottom: 0;
   }
@@ -182,6 +183,7 @@
 }
 
 .fieldset__textarea {
+  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;

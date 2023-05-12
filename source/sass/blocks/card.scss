@@ -62,7 +62,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 18px 15px 17px 25px;
+    padding: 18px 19px 17px 25px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
@@ -73,7 +73,7 @@
 
 .card__details--full {
   @media (min-width: variables.$desktop-width) {
-    padding: 22px 15px 17px 21px;
+    padding: 21px 19px 13px 22px;
   }
 }
 
@@ -125,6 +125,10 @@
     align-self: center;
   }
 
+  @media (min-width: variables.$tablet-width) {
+    align-self: center;
+  }
+
   &:hover {
     opacity: 0.6;
   }
@@ -142,6 +146,12 @@
   }
 }
 
+.card__like-wrapper--full {
+  @media (min-width: variables.$desktop-width) {
+    margin-top: -7px;
+  }
+}
+
 .card__like-wrapper::before {
   vertical-align: center;
   display: inline-block;
@@ -150,7 +160,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   width: 23px;
   height: 21px;
-  margin-right: 13px;
+  margin-right: 10px;
 
   @media (min-width: variables.$desktop-width) {
     background-color: #ffffff;

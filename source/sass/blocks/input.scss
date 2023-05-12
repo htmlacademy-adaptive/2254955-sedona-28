@@ -46,6 +46,9 @@
 }
 
 .input__edit--icon {
+
+  padding: 15px 70px 10px 11px;
+
   &:focus {
     outline: 3px solid variables.$text-color-primary;
   }
