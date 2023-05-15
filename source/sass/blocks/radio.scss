@@ -24,8 +24,8 @@
   clip: rect(0, 0, 0, 0);
 }
 
-.radio__input:focus ~ .radio__name::before {
-  @include mixins.focus(#000000);
+.radio__input:focus-visible ~ .radio__name::before {
+  @include mixins.focus-visible(#000000);
 }
 
 .radio__name {

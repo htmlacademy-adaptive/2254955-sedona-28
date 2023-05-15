@@ -26,8 +26,8 @@
     background-color: #5496bd;
   }
 
-  &:focus {
-    @include mixins.focus(#000000);
+  &:focus-visible {
+    @include mixins.focus-visible(#000000);
   }
 }
 

@@ -10,7 +10,7 @@
 }
 
 @mixin button {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -33,7 +33,7 @@
   }
 }
 
-@mixin focus($color) {
+@mixin focus-visible($color) {
   outline: 3px solid $color;
   border: none;
 }

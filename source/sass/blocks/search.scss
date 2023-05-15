@@ -86,8 +86,8 @@
     width: 458px;
   }
 
-  &:focus {
-    @include mixins.focus(#000000);
+  &:focus-visible {
+    @include mixins.focus-visible(#000000);
   }
 }
 

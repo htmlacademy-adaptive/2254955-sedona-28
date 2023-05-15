@@ -137,11 +137,11 @@
     opacity: 0.3;
   }
 
-  &:focus {
-    @include mixins.focus(#000000);
+  &:focus-visible {
+    @include mixins.focus-visible(#000000);
 
     @media (min-width: variables.$desktop-width) {
-      @include mixins.focus(#FFFFFF);
+      @include mixins.focus-visible(#FFFFFF);
     }
   }
 }

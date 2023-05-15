@@ -40,8 +40,12 @@
     outline: none;
   }
 
+  &:focus-visible {
+    outline: none;
+  }
+
   &:focus {
-    outline: 3px solid variables.$text-color-primary;
+    outline: none;
   }
 }
 
@@ -49,8 +53,12 @@
 
   padding: 15px 70px 10px 11px;
 
+  &:focus-visible {
+    outline: none;
+  }
+
   &:focus {
-    outline: 3px solid variables.$text-color-primary;
+    outline: none;
   }
 }
 

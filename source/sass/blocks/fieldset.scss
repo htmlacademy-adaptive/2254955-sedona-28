@@ -240,8 +240,8 @@
     background: #d5d5d5;
   }
 
-  &:focus {
-    @include mixins.focus(#000000);
+  &:focus-visible {
+    outline: none;
   }
 
   @media (min-width: variables.$desktop-width) {

@@ -111,8 +111,8 @@
 
   @media (max-width: variables.$mobile-width-only) {
     flex-direction: column;
-    background-color: #678fa8;
-    gap: 1px;
+    background-color: #9ac2db;
+    gap: 2px;
     position: absolute;
     width: 100%;
   }
@@ -198,8 +198,8 @@
     }
   }
 
-  &:focus {
-    @include mixins.focus(#000000);
+  &:focus-visible {
+    @include mixins.focus-visible(#000000);
   }
 }
 
