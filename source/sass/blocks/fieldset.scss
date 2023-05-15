@@ -1,6 +1,25 @@
 @use "../mixins";
 @use "../variables";
 
+.fieldset__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 21px;
+    grid-column: 2/3;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 2/3;
+  }
+}
+
 .fieldset__title-wrapper {
   display: block;
 
@@ -13,7 +32,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 28px;
+    margin-bottom: 0;
   }
 }
 
@@ -26,6 +45,7 @@
 .fieldset__title-wrapper--emotions {
   @media (min-width: variables.$desktop-width) {
     margin-top: 37px;
+    margin-bottom: 28px;
   }
 }
 
@@ -58,7 +78,7 @@
 
   @media (min-width: variables.$desktop-width) {
     display: grid;
-    grid-template-columns: 280px 1fr 280px;
+    grid-template-columns: 280px 400px 280px;
     align-items: center;
   }
 }
@@ -100,25 +120,6 @@
   }
 }
 
-.fieldset__title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-
-  @media (min-width: variables.$tablet-width) {
-    font-size: 21px;
-    grid-column: 2/3;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    grid-column: 2/3;
-  }
-}
-
 .fieldset__list {
   @include mixins.reset-list;
 
@@ -144,7 +145,7 @@
 
   @media (min-width: variables.$desktop-width) {
     margin: 44px auto 0;
-    column-gap: 28px;
+    column-gap: 68px;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 53px;
     max-width: 960px;
@@ -160,7 +161,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    column-gap: 64px;
+    column-gap: 46px;
     padding: 0 45px;
     grid-template-columns: repeat(4, 1fr);
     max-width: 960px;
@@ -176,6 +177,18 @@
 
 .fieldset__item--radio {
   margin-bottom: 14px;
+}
+
+.fieldset__item--checkbox:nth-child(4n + 2) {
+  @media (min-width: variables.$desktop-width) {
+    margin-left: 8px;
+  }
+}
+
+.fieldset__item--checkbox:nth-child(4n + 3) {
+  @media (min-width: variables.$desktop-width) {
+    margin-left: 12px;
+  }
 }
 
 .fieldset__item--checkbox {
