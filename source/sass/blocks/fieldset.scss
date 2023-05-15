@@ -220,7 +220,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  color: variables.$text-color-primary-opacity;
+  color: variables.$text-color-primary;
   background-color: #f2f2f2;
   padding: 16px 17px;
   resize: none;
@@ -242,6 +242,10 @@
 
   &:focus-visible {
     outline: none;
+  }
+
+  &::placeholder {
+    color: variables.$text-color-primary-opacity;
   }
 
   @media (min-width: variables.$desktop-width) {
