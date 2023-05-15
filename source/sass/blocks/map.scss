@@ -18,6 +18,17 @@
   border: none;
   width: 100%;
   max-height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/map/map-mobile.jpg");
+
+  @media (min-width: variables.$tablet-width) {
+    background-image: url("../img/map/map-tablet.jpg");
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-image: url("../img/map/map-desktop.jpg");
+  }
 
   &:focus {
     @include mixins.focus(#000000);
