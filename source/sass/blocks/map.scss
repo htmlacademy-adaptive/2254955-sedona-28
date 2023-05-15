@@ -30,8 +30,8 @@
     background-image: url("../img/map/map-desktop.jpg");
   }
 
-  &:focus {
-    @include mixins.focus(#000000);
+  &:focus-visible {
+    @include mixins.focus-visible(#000000);
   }
 }
 

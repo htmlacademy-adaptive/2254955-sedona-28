@@ -9,7 +9,6 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  overflow: clip;
 }
 
 .checkbox--bridge {
@@ -42,8 +41,8 @@
   clip: rect(0, 0, 0, 0);
 }
 
-.checkbox__input:focus ~ .checkbox__name::before {
-  @include mixins.focus(#000000);
+.checkbox__input:focus-visible ~ .checkbox__name::before {
+  @include mixins.focus-visible(#000000);
 }
 
 .checkbox__name {

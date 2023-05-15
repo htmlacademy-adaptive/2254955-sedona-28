@@ -21,8 +21,8 @@
     opacity: 0.3;
   }
 
-  &:focus {
-    @include mixins.focus(#000000);
+  &:focus-visible {
+    @include mixins.focus-visible(#000000);
   }
 }
 

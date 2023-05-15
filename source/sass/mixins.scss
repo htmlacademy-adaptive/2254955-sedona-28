@@ -33,7 +33,7 @@
   }
 }
 
-@mixin focus($color) {
+@mixin focus-visible($color) {
   outline: 3px solid $color;
   border: none;
 }
